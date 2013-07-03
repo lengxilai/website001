@@ -1,0 +1,22 @@
+
+@font-face {
+    font-family: 'Folio Light';
+    src: url('http://f.fontdeck.com/f/1/anFadjBEdFoAA+yrF/C41exX6OWa+l8mu7dX4NB1T3tZMZ4Okp9FegteUltkkRmrnmiJP3fYOvhwjQ.eot');
+    src: url('http://f.fontdeck.com/f/1/anFadjBEdFoAA+yrF/C41exX6OWa+l8mu7dX4NB1T3tZMZ4Okp9FegteUltkkRmrnmiJP3fYOvhwjQ.eot?') format('embedded-opentype'),
+    url('http://f.fontdeck.com/f/1/anFadjBEdFoAA+yrF/C41exX6OWa+l8mu7dX4NB1T3tZMZ4Okp9FegteUltkkRmrnmiJP3fYOvhwjQ.woff') format('woff'),
+    url('http://f.fontdeck.com/f/1/anFadjBEdFoAA+yrF/C41exX6OWa+l8mu7dX4NB1T3tZMZ4Okp9FegteUltkkRmrnmiJP3fYOvhwjQ.ttf') format('opentype'),
+    url('http://f.fontdeck.com/f/1/anFadjBEdFoAA+yrF/C41exX6OWa+l8mu7dX4NB1T3tZMZ4Okp9FegteUltkkRmrnmiJP3fYOvhwjQ.svg#1056') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Folio Medium';
+    src: url('http://f.fontdeck.com/f/1/X0ZhWjFHczgAA1dGKHCgh4jAc2745Qkx8DDLFro0sBBADfiwfRGS1tg5wu2fjTdLk5u23SBFC9E18A.eot');
+    src: url('http://f.fontdeck.com/f/1/X0ZhWjFHczgAA1dGKHCgh4jAc2745Qkx8DDLFro0sBBADfiwfRGS1tg5wu2fjTdLk5u23SBFC9E18A.eot?') format('embedded-opentype'),
+    url('http://f.fontdeck.com/f/1/X0ZhWjFHczgAA1dGKHCgh4jAc2745Qkx8DDLFro0sBBADfiwfRGS1tg5wu2fjTdLk5u23SBFC9E18A.woff') format('woff'),
+    url('http://f.fontdeck.com/f/1/X0ZhWjFHczgAA1dGKHCgh4jAc2745Qkx8DDLFro0sBBADfiwfRGS1tg5wu2fjTdLk5u23SBFC9E18A.ttf') format('opentype'),
+    url('http://f.fontdeck.com/f/1/X0ZhWjFHczgAA1dGKHCgh4jAc2745Qkx8DDLFro0sBBADfiwfRGS1tg5wu2fjTdLk5u23SBFC9E18A.svg#1059') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}

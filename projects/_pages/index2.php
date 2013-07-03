@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  
+ <title>Projects | Foster + Partners</title>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+<meta name="author" content="redboxmedia.com">
+<meta name="copyright" content="Foster + Partners"> 
+
+<!-- <link rel="stylesheet" href="http://f.fontdeck.com/s/css/D8Fz3XWt+VC0VDejQHe7Mks5Qzc/riverside.rbmtest.com/9833.css" type="text/css" /> 
+<link rel="stylesheet" href="http://f.fontdeck.com/s/css/D8Fz3XWt+VC0VDejQHe7Mks5Qzc/localhost/9833.css" type="text/css" /> 
+<link rel="stylesheet" href="../../core/css/fp.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../core/css/fp_grid.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="../../core/js/fp_scripts.js"></script>
+<script type="text/javascript" src="../../core/js/jquery.infinitescroll.min.js"></script> -->
+
+
+</head>
+<body>
+	
+<div class="outer">
+<div id="container" class="variable-sizes clearfix infinite-scrolling">
+	  
+<div class='element proj w93 t192 k '><a href='marseille-vieux-port/'><img class='p_img' src='../data/projects/1980/t1.jpg' /><div class='p_nam' ><p class='smltext'>Marseille Vieux Port<br><span class='lc'>France 2011</span></p></div></a></div><div class='element proj w93 t93 z'><a href='faena-house-interiors/'><img class='p_img' src='../data/projects/9038/t1.jpg' /><div class='p_nam' ><p class='smltext'>Faena House - Interiors</p></div></a></div><div class='element proj w93 t93 i l m '><a href='renault-distribution-centre/'><img class='p_img' src='../data/projects/0295/t1.jpg' /><div class='p_nam' ><p class='smltext'>Renault Distribution Centre</p></div></a></div><div class='element proj w93 t93 m '><a href='3-more-london-riverside/'><img class='p_img' src='../data/projects/1230/t1.jpg' /><div class='p_nam' ><p class='smltext'>3 More London Riverside</p></div></a></div><div class='element proj w192 t192 m '><a href='willis-faber-&-dumas-headquarters/'><img class='p_img' src='../data/projects/0102/t1.jpg' /><div class='p_nam' ><p class='smltext'>Willis Faber & Dumas Headquarters<br><span class='lc'>UK 1971</span></p></div></a></div><div class='element proj w192 t192 i m o '><a href='mclaren-technology-centre/'><img class='p_img' src='../data/projects/0995/t1.jpg' /><div class='p_nam' ><p class='smltext'>McLaren Technology Centre<br><span class='lc'>UK 1998</span></p></div></a></div><div class='element proj w93 t192 m '><a href='electricite-de-france-regional-headquarters/'><img class='p_img' src='../data/projects/0753/t1.jpg' /><div class='p_nam' ><p class='smltext'>Electricité de France Regional Headquarters<br><span class='lc'>France 1992</span></p></div></a></div><div class='element proj w192 t192 l m '><a href='the-bow/'><img class='p_img' src='../data/projects/1417/t1.jpg' /><div class='p_nam' ><p class='smltext'>The Bow<br><span class='lc'>Canada 2005</span></p></div></a></div><div class='element proj w192 t192 i j '><a href='château-margaux/'><img class='p_img' src='../data/projects/1868/t1.jpg' /><div class='p_nam' ><p class='smltext'>Château Margaux<br><span class='lc'>France 2009</span></p></div></a></div><div class='element proj w192 t93 m  '><a href='jcdecaux-headquarters/'><img class='p_img' src='../data/projects/0987/t1.jpg' /><div class='p_nam' ><p class='smltext'>JCDecaux Headquarters<br><span class='lc'>UK 1997</span></p></div></a></div><div class='element proj w192 t192 a q '><a href='millennium-bridge/'><img class='p_img' src='../data/projects/0953/t1.jpg' /><div class='p_nam' ><p class='smltext'>Millennium Bridge<br><span class='lc'>UK 1996</span></p></div></a></div><div class='element proj w93 t192 n '><a href='randers-rf1-stacking-chair/'><img class='p_img' src='../data/projects/1242/t1.jpg' /><div class='p_nam' ><p class='smltext'>Randers - RF1 Stacking Chair<br><span class='lc'>Denmark 2006</span></p></div></a></div><div class='element proj w93 t93 n '><a href='soft-cells-as-wall-and-ceiling-system/'><img class='p_img' src='../data/projects/1272/t1.jpg' /><div class='p_nam' ><p class='smltext'>Soft Cells AS Wall and Ceiling System</p></div></a></div><div class='element proj w192 t192 g o '><a href='masdar-institute/'><img class='p_img' src='../data/projects/1605/t1.jpg' /><div class='p_nam' ><p class='smltext'>Masdar Institute<br><span class='lc'>United Arab Emirates 2007</span></p></div></a></div><div class='element proj w192 t192 z'><a href='faustino-winery-interiors/'><img class='p_img' src='../data/projects/9008/t1.jpg' /><div class='p_nam' ><p class='smltext'>Faustino Winery - Interiors<br><span class='lc'>Spain 2007</span></p></div></a></div><div class='element proj w192 t192 d '><a href='the-sage-gateshead/'><img class='p_img' src='../data/projects/0984/t1.jpg' /><div class='p_nam' ><p class='smltext'>The Sage Gateshead<br><span class='lc'>UK 1997</span></p></div></a></div><div class='element proj w192 t93 q '><a href='expo-station/'><img class='p_img' src='../data/projects/0966/t1.jpg' /><div class='p_nam' ><p class='smltext'>EXPO Station<br><span class='lc'>Singapore 1997</span></p></div></a></div><div class='element proj w93 t93 n '><a href='hoesch-baths/'><img class='p_img' src='../data/projects/1105/t1.jpg' /><div class='p_nam' ><p class='smltext'>Hoesch - Baths</p></div></a></div><div class='element proj w192 t192 n '><a href='flo-light/'><img class='p_img' src='../data/projects/1974/t1.jpg' /><div class='p_nam' ><p class='smltext'>Flo Light<br><span class='lc'>Italy 2011</span></p></div></a></div><div class='element proj w93 t93 j l m p  '><a href='vietinbank/'><img class='p_img' src='../data/projects/1891/t1.jpg' /><div class='p_nam' ><p class='smltext'>Vietinbank</p></div></a></div><div class='element proj w192 t192 j n q '><a href='sailing-yacht-panthalassa/'><img class='p_img' src='../data/projects/1532/t1.jpg' /><div class='p_nam' ><p class='smltext'>Sailing Yacht Panthalassa<br><span class='lc'>Italy 2007</span></p></div></a></div><div class='element proj w192 t192 d '><a href='great-court-at-the-british-museum/'><img class='p_img' src='../data/projects/0793/t1.jpg' /><div class='p_nam' ><p class='smltext'>Great Court at the British Museum<br><span class='lc'>UK 1994</span></p></div></a></div><div class='element proj w93 t93 g '><a href='langley-academy/'><img class='p_img' src='../data/projects/1324/t1.jpg' /><div class='p_nam' ><p class='smltext'>Langley Academy</p></div></a></div><div class='element proj w192 t192 d g '><a href='sainsbury-centre-for-visual-arts/'><img class='p_img' src='../data/projects/0188/t1.jpg' /><div class='p_nam' ><p class='smltext'>Sainsbury Centre for Visual Arts<br><span class='lc'>UK 1974</span></p></div></a></div><div class='element proj w192 t93 g '><a href='california-state-university-channel-islands/'><img class='p_img' src='../data/projects/1081/t1.jpg' /><div class='p_nam' ><p class='smltext'>California State University Channel Islands<br><span class='lc'>USA 2000</span></p></div></a></div><div class='element proj w93 t192 d h j l p '><a href='al-faisaliah-complex/'><img class='p_img' src='../data/projects/0768/t1.jpg' /><div class='p_nam' ><p class='smltext'>Al Faisaliah Complex<br><span class='lc'>Saudi Arabia 1994</span></p></div></a></div><div class='element proj w192 t93 d '><a href='crescent-wing-sainsbury-centre-for-visual-arts/'><img class='p_img' src='../data/projects/0441/t1.jpg' /><div class='p_nam' ><p class='smltext'>Crescent Wing, Sainsbury Centre for Visual Arts<br><span class='lc'>UK 1988</span></p></div></a></div><div class='element proj w93 t93 m '><a href='moor-house/'><img class='p_img' src='../data/projects/0996/t1.jpg' /><div class='p_nam' ><p class='smltext'>Moor House</p></div></a></div><div class='element proj w93 t192 i m q '><a href='hactl-superterminal/'><img class='p_img' src='../data/projects/0734/t1.jpg' /><div class='p_nam' ><p class='smltext'>HACTL Superterminal<br><span class='lc'>China 1992</span></p></div></a></div><div class='element proj w93 t93 g o '><a href='leslie-l-dan-pharmacy-building/'><img class='p_img' src='../data/projects/1183/t1.jpg' /><div class='p_nam' ><p class='smltext'>Leslie L. Dan Pharmacy Building</p></div></a></div><div class='element proj w192 t192 z'><a href='museum-of-fine-arts-interiors/'><img class='p_img' src='../data/projects/9010/t1.jpg' /><div class='p_nam' ><p class='smltext'>Museum of Fine Arts - Interiors<br><span class='lc'>USA 1999</span></p></div></a></div><div class='element proj w93 t192 m h l  '><a href='ilham-baru/'><img class='p_img' src='../data/projects/1784/t1.jpg' /><div class='p_nam' ><p class='smltext'>Ilham Baru<br><span class='lc'>Malaysia 2009</span></p></div></a></div><div class='element proj w93 t93 h j l m  '><a href='gerling-ring/'><img class='p_img' src='../data/projects/0856/t1.jpg' /><div class='p_nam' ><p class='smltext'>Gerling Ring</p></div></a></div><div class='element proj w93 t192 z'><a href='cathay-pacific-lounges-hong-kong-international-airport-interiors/'><img class='p_img' src='../data/projects/9027/t1.jpg' /><div class='p_nam' ><p class='smltext'>Cathay Pacific Lounges, Hong Kong International Airport - Interiors<br><span class='lc'>China 2008</span></p></div></a></div><div class='element proj w93 t93 j l m p '><a href='rimini-seafront-and-mixed-use/'><img class='p_img' src='../data/projects/1706/t1.jpg' /><div class='p_nam' ><p class='smltext'>Rimini Seafront and Mixed Use</p></div></a></div><div class='element proj w192 t93 z'><a href='the-murezzan-interiors/'><img class='p_img' src='../data/projects/9023/t1.jpg' /><div class='p_nam' ><p class='smltext'>The Murezzan - Interiors<br><span class='lc'>Switzerland 2003</span></p></div></a></div><div class='element proj w93 t93 h l m '><a href='saqqara-development/'><img class='p_img' src='../data/projects/1967/t1.jpg' /><div class='p_nam' ><p class='smltext'>Saqqara Development</p></div></a></div><div class='element proj w192 t93 g '><a href='patil-university-school-of-management/'><img class='p_img' src='../data/projects/1865/t1.jpg' /><div class='p_nam' ><p class='smltext'>Patil University School of Management<br><span class='lc'>India 2009</span></p></div></a></div><div class='element proj w93 t192 d '><a href='zenith-music-venue/'><img class='p_img' src='../data/projects/1299/t1.jpg' /><div class='p_nam' ><p class='smltext'>Zénith Music Venue<br><span class='lc'>France 2004</span></p></div></a></div><div class='element proj w192 t192 d h k l p '><a href='west-kowloon-cultural-district/'><img class='p_img' src='../data/projects/1823/t1.jpg' /><div class='p_nam' ><p class='smltext'>West Kowloon Cultural District<br><span class='lc'>China 2009</span></p></div></a></div><div class='element proj w93 t93 p '><a href='porcelanosa/'><img class='p_img' src='../data/projects/2113/t1.jpg' /><div class='p_nam' ><p class='smltext'>Porcelanosa</p></div></a></div><div class='element proj w192 t192 q '><a href='north-greenwich-interchange/'><img class='p_img' src='../data/projects/0897/t1.jpg' /><div class='p_nam' ><p class='smltext'>North Greenwich Interchange<br><span class='lc'>UK 1995</span></p></div></a></div><div class='element proj w93 t93 n '><a href='enel-pylons/'><img class='p_img' src='../data/projects/1033/t1.jpg' /><div class='p_nam' ><p class='smltext'>ENEL Pylons</p></div></a></div><div class='element proj w93 t93 d '><a href='musee-de-prehistoire/'><img class='p_img' src='../data/projects/0651/t1.jpg' /><div class='p_nam' ><p class='smltext'>Musée de Préhistoire</p></div></a></div><div class='element proj w93 t93 p '><a href='asprey-store-bond-street/'><img class='p_img' src='../data/projects/1151/t1.jpg' /><div class='p_nam' ><p class='smltext'>Asprey Store, Bond Street</p></div></a></div><div class='element proj w93 t93 d '><a href='new-holland-island/'><img class='p_img' src='../data/projects/1426/t1.jpg' /><div class='p_nam' ><p class='smltext'>New Holland Island</p></div></a></div><div class='element proj w93 t192 m '><a href='commerzbank-headquarters/'><img class='p_img' src='../data/projects/0626/t1.jpg' /><div class='p_nam' ><p class='smltext'>Commerzbank Headquarters<br><span class='lc'>Germany 1991</span></p></div></a></div><div class='element proj w93 t192 z'><a href='la-voile-interiors/'><img class='p_img' src='../data/projects/9020/t1.jpg' /><div class='p_nam' ><p class='smltext'>La Voile - Interiors<br><span class='lc'>France 2000</span></p></div></a></div><div class='element proj w93 t93 n '><a href='motoryacht/'><img class='p_img' src='../data/projects/0555/t1.jpg' /><div class='p_nam' ><p class='smltext'>Motoryacht</p></div></a></div><div class='element proj w93 t192 h '><a href='house-in-corsica/'><img class='p_img' src='../data/projects/0546/t1.jpg' /><div class='p_nam' ><p class='smltext'>House in Corsica<br><span class='lc'>France 1990</span></p></div></a></div><div class='element proj w93 t93 g o '><a href='clark-center-stanford-university/'><img class='p_img' src='../data/projects/1076/t1.jpg' /><div class='p_nam' ><p class='smltext'>Clark Center, Stanford University</p></div></a></div><div class='element proj w93 t93 p '><a href='esprit-shop/'><img class='p_img' src='../data/projects/0410/t1.jpg' /><div class='p_nam' ><p class='smltext'>Esprit Shop</p></div></a></div><div class='element proj w192 t93 q '><a href='kai-tak-cruise-terminal/'><img class='p_img' src='../data/projects/1843/t1.jpg' /><div class='p_nam' ><p class='smltext'>Kai Tak Cruise Terminal<br><span class='lc'>China 2010</span></p></div></a></div><div class='element proj w93 t93 g '><a href='london-academy-edgware/'><img class='p_img' src='../data/projects/1193/t1.jpg' /><div class='p_nam' ><p class='smltext'>London Academy, Edgware</p></div></a></div><div class='element proj w93 t93 g '><a href='west-london-academy/'><img class='p_img' src='../data/projects/1178/t1.jpg' /><div class='p_nam' ><p class='smltext'>West London Academy</p></div></a></div><div class='element proj w192 t93 d l '><a href='fortaleza-hall-and-the-commons-sc-johnson/'><img class='p_img' src='../data/projects/1450/t1.jpg' /><div class='p_nam' ><p class='smltext'>Fortaleza Hall and the Commons, SC Johnson<br><span class='lc'>USA 2006</span></p></div></a></div><div class='element proj w192 t93 a k l '><a href='slussen-masterplan/'><img class='p_img' src='../data/projects/1710/t1.jpg' /><div class='p_nam' ><p class='smltext'>Slussen Masterplan<br><span class='lc'>Sweden 2008</span></p></div></a></div><div class='element proj w93 t192 j '><a href='me-hotel/'><img class='p_img' src='../data/projects/1301/t1.jpg' /><div class='p_nam' ><p class='smltext'>ME Hotel<br><span class='lc'>UK 2004</span></p></div></a></div><div class='element proj w192 t93 g o '><a href='center-for-clinical-science-research/'><img class='p_img' src='../data/projects/0886/t1.jpg' /><div class='p_nam' ><p class='smltext'>Center for Clinical Science Research<br><span class='lc'>USA 1995</span></p></div></a></div><div class='element proj w93 t192 z'><a href='hsbc-uk-headquarters-interiors/'><img class='p_img' src='../data/projects/9016/t1.jpg' /><div class='p_nam' ><p class='smltext'>HSBC UK Headquarters - Interiors<br><span class='lc'>UK 1997</span></p></div></a></div>	      
+  </div> <!-- #container -->
+
+
+
+
+
+</div> <!-- end outer -->
+
+</body>
+
+<!-- scripts -->
+  <script>
+  
+  var $container = $('#container');
+	  
+  function triggerIsotope(){
+  	$container.isotope({itemSelector: '.element',masonry: {columnWidth: 99}});
+  	$container.toggleClass('variable-sizes').isotope('reLayout');
+  	return false;
+  }
+  
+    $(function(){
+		
+      $container.isotope({
+        itemSelector : '.element'
+      });
+      
+      $container.infinitescroll({
+        navSelector  : '#page_nav',    // selector for the paged navigation 
+        nextSelector : '#page_nav a',  // selector for the NEXT link (to page 2)
+        itemSelector : '.element',     // selector for all items you'll retrieve
+        loading: {
+            finishedMsg: 'Loaded.',
+            img: 'http://i.imgur.com/qkKy8.gif'
+          }
+        },
+        // call Isotope as a callback
+        function( newElements ) {
+          $container.isotope( 'appended', $( newElements ) ); 
+        }
+      );
+      
+    });
+	
+	$("img.p_img").hover(function() { $(this).stop().animate({"opacity": "0.1"});},
+	function() {$(this).stop().animate({"opacity": "1"});});
+	
+
+
+
+</script>
+
+
+
+<!-- end scripts -->
+
+</html>

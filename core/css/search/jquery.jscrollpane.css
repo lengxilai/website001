@@ -1,0 +1,15 @@
+.jspContainer{overflow:hidden;position:relative}
+.jspPane{position:absolute}
+
+.jspVerticalBar{position:absolute;top:0;left:0;width:17px;height:100%}
+
+.jspVerticalBar *{margin:0;padding:0}
+
+.jspCap{display:none}
+.jspTrack{background:#34353a;position:relative}
+.jspDrag{background:#ccc;position:relative;top:0;left:0;cursor:pointer}
+
+.jspDrag{background:#ccc;position:relative;top:0;left:0;cursor:pointer}
+.jspHorizontalBar .jspDrag{float:left;height:100%}
+.jspVerticalBar .jspArrow{height:16px}
+.jspVerticalBar .jspArrow:focus{outline:none}

@@ -1,0 +1,197 @@
+/**
+ * Galleria Fullscreen Theme
+ * Copyright (c) 2011, Aino
+ */
+
+html,
+body { /*background: #000*/ }
+.galleria-container {
+	z-index: -999;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0;
+    
+}
+.galleria-container img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+.galleria-stage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.galleria-thumbnails-container {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    /*padding-top: 34px;*/
+    width: 100%;
+}
+
+
+.galleria-thumbnails-tab {
+	display: none;
+    opacity: .7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 0;
+    height: 0px;
+    width: 102px;
+    background: #000 url(../img/galleria/up.gif) no-repeat 50% 0px;
+    cursor: pointer;
+
+}
+.galleria-thumbnails-tab:hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+}
+.galleria-thumbnails-tab.open,
+.galleria-thumbnails-tab.open:hover {
+    background-image: url(../img/galleria/down.gif);
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+}
+.galleria-thumbnails {
+    background: #000;
+    overflow: hidden;
+}
+.galleria-thumbnails-list {
+	display: none;
+    background: #000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+.galleria-thumbnails .galleria-image {
+    width: 80px;
+    height: 50px;
+    float: left;
+    /*cursor: pointer;*/
+    margin-right: 5px;
+}
+.galleria-thumbnails .galleria-image img { background: #000 }
+.galleria-thumbnails .active { cursor: default }
+.galleria-carousel .galleria-thumbnails-list {
+    border-left: 30px solid #000;
+    border-right: 30px solid #000;
+}
+.galleria-image-nav {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.galleria-image-nav-right,
+.galleria-image-nav-left {
+    width: 240px;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: url(../img/galleria/r.gif) no-repeat 0 50%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+.galleria-image-nav-right {
+	background: url(../img/galleria/r.gif) no-repeat 205px 50%;
+}
+.galleria-image-nav-left {
+    left: 0;
+    right: auto;
+    background-image: url(../img/galleria/l.gif);
+}
+.galleria-loader {
+	display: none;
+
+}
+.galleria-info {
+    z-index: 4;
+    font: 11px/1.4 arial,sans-serif;
+    text-shadow: rgba(0,0,0,.2) 1px 1px 1px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-top: 2px solid #000;
+    display: none;
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0,0,0,.5);
+}
+.galleria-info-text {
+    width: 50%;
+    margin: 0 auto;
+}
+.galleria-info-title { font-weight: bold }
+.galleria-thumb-nav-left,
+.galleria-thumb-nav-right {
+    cursor: pointer;
+    display: none;
+    background: url(../img/galleria/p.gif) no-repeat 50% 50%;
+    position: absolute;
+    left: 5px;
+    top: 21px;
+    bottom: 5px;
+    width: 20px;
+    z-index: 3;
+    opacity: .8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+}
+
+.galleria-thumb-nav-right {
+    background-image: url(../img/galleria/n.gif);
+    left: auto;
+    right: 5px;
+}
+
+.galleria-carousel .galleria-thumb-nav-left,
+.galleria-carousel .galleria-thumb-nav-right { display: block }
+.galleria-carousel .galleria-thumb-nav-left:hover,
+.galleria-carousel .galleria-thumb-nav-right:hover { background-color: #222 }
+.galleria-thumb-nav-left.disabled,
+.galleria-thumb-nav-right.disabled,
+.galleria-thumb-nav-left.disabled:hover,
+.galleria-thumb-nav-right.disabled:hover {
+    opacity: .2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+    cursor: default;
+}
+
+.retn, .retnex {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/galleria/bck.png);
+	text-offset:-4000px;
+	z-index: 40000;
+	width: 34px;
+	height: 34px;
+	display: block;
+}
+
+.retnex {
+
+	background-image: url(../img/galleria/bckex.png);
+
+}
+
+.retn:hover, .retnex:hover  { 
+  	background-position: 0 -34px;
+}
+
+

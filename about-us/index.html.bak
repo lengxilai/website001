@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+<title>关于我们 | 大连都市发展</title>
+
+<!-- 
+Foster + Partners is one of the most innovative architecture and integrated design practices in the world. Since its inception in 1967 it has received more than 620 awards for excellence and won over 100 national and international competitions. -->
+
+<meta name="Description" content="Foster + Partners is one of the most innovative architecture and integrated design practices in the world. Since its inception in 1967 it has received more than 620 awards for excellence and won over 100 national and international competitions.">
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+<meta name="author" content="redboxmedia.com">
+<meta name="copyright" content="Foster + Partners">
+<meta name="viewport" content="width=890" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../m/core/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../m/core/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../m/core/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../m/core/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../favicon.ico?v=2" />
+
+<link rel="stylesheet" href="s/css/D8Fz3XWt+VC0VDejQHe7Mks5Qzc/www.fosterandpartners.com/9833.css" type="text/css" />
+
+<link rel="stylesheet" href="../core/css/fp2.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" href="../core/css/galleria.prof.b.css" type="text/css" media="screen" />
+
+<!--[if lte IE 7]> <link rel="stylesheet" href="../core/css/ie7.css" type="text/css" media="screen" /> <![endif]-->
+
+<style> 
+
+.obs, .accordion-inner.profiletext { display:none; }
+
+</style>
+
+
+</head>
+
+
+<body>
+	
+<div class="outer">
+<div class="search collapse in" id="accordionSearch">
+	<iframe frameBorder='0' border='0' style="border:0;" id='searching' scrolling='no' src="../search/" frameBorder="0" ></iframe>    
+</div>  
+
+<!-- start nav --> 
+
+<div class="nav  ">
+<div class="navbar ">
+
+<a href="../"><div class="logo " >大连都市发展</div></a>
+
+<div class="srch " data-toggle="collapse" data-target="#accordionSearch" ></div>
+<div class="mnubutton " data-toggle="collapse" data-target="#menu" ><h4>菜单</h4></div>
+
+</div> <!-- .navbar -->
+</div> <!-- .nav -->
+
+<div class="clear"></div>
+
+
+<div class="mainbar ">
+	<div class="maininner">
+    <h4><a class='headline subcol titleWtd1 profcol ' href="design-services/">首页</a></h4>
+	<h4><a class='headline subcol titleWtd2 projcol ' href="about-us/">企业介绍</a></h4>
+	<h4><a class='headline subcol titleWtd3' href="news/">新闻中心</a></h4>
+	<h4><a class='headline subcol titleWtd4 ' href="projects/">项目展示</a></h4>
+	<h4><a class='headline subcol titleWtd5 ' href="practice-data/">企业文化</a></h4>
+	<h4><a class='headline subcol titleWtd6 ' href="careers/">人力资源</a></h4>
+	<h4><a class='headline subcol titleWtd7 ' href="contact/">企业邮箱</a></h4>
+	<h4><a class='headline subcol titleWtd8 ' href="contact/">联系我们</a></h4>
+	</div>
+</div>
+
+<div class="clear"></div>
+
+<div class="accordion" id="accordion">
+	
+<!--  menu group -->
+
+<div class="accordion-group ">
+	
+	    <div id="menu" class="accordion-body collapse">
+	      <div class="accordion-inner ">
+			  
+
+		  	<div class="subcol idcol">
+		  	<ul class="smenuh" > 
+		  		<li><a href="../design-services/architecture/">Architecture</a></li>
+		  		<li><a href="../design-services/environmental-engineering/">Environmental Engineering</a></li>
+		  		<li><a href="../design-services/structural-engineering/">Structural Engineering</a></li>
+		  		<li><a href="../design-services/interiors/">Interiors</a></li>
+		  		<li><a href="../design-services/industrial-design/">Industrial Design</a></li>
+		  		<li><a href="../design-services/project-management/">Project Management</a></li>
+		  		<li><a href="../design-services/urban-design/">Urban Design</a></li>
+		  		<li><a href="../design-services/workplace-consultancy/">Workplace Consultancy</a></li>
+		  		<li><a href="../design-services/research/">Research</a></li>
+		  		<li><a href="../design-services/sustainability/">Sustainability</a></li>
+		  		<li><a href="../design-services/design-support/">Design Support</a></li>
+		  	</ul>
+		  	</div>
+
+
+		  	<div class="subcol">
+		  		<ul class="smenuh" > 
+		  			<li><a href="../about-us/team/">Team</a></li>		
+		  			<li><a href="../about-us/the-way-we-work/">The Way we Work</a></li>
+		  			<li><a href="../about-us/design-board/">Design Board</a></li>
+		  		</ul>
+		  	</div>
+
+
+		  	<div class="subcol tmenu">
+		  	<ul class="smenuh" > 
+		  		   <li><a href="../projects/type/">Type</a></li>
+		  		   <li><a href="../projects/map/">Map</a></li>
+		  		   <li><a href="../projects/on-site/">On Site</a></li>
+		  		   <li><a href="../projects/list/">List</a></li>	   
+		  		   <li><a href="../projects/stored/">Stored Projects</a></li>
+		  	</ul>
+		  	</div>
+
+		  
+		  <div class="subcol dmenu">
+		  	    <ul class="smenu" > 
+		  	   <li><a href="../practice-data/awards/">Awards</a></li>
+		  	   <li><a href="../practice-data/competitions/">Competitions</a></li>
+		  	   <li><a href="../practice-data/exhibitions/">Exhibitions</a></li>
+		  	   <li><a href="../practice-data/publications/">Publications</a></li>
+		  	   <li><a href="../practice-data/essays/">Essays</a></li>
+<li><a href="../practice-data/links/">Links</a></li>
+		       <li><a href="../practice-data/videos/">Videos</a></li>
+		  	   </ul>
+		  </div>
+		  <div class="subcol carmenu">
+		  	    <ul class="smenu" > 
+		  	   <li><a href="../careers/graduate-show/">Graduate Show</a></li>
+		  	   <li><a href="../careers/scholarship/">Scholarship</a></li>
+		  	   </ul>
+		  </div>
+		  <div class="subcol conmenu">
+		  	     <ul class="smenu" > 
+		  	   <li class="smenu"><a href="../contact/london/">London</a></li><li class="smenu"><a href="../contact/new-york/">New York</a></li><li class="smenu"><a href="../contact/madrid/">Madrid</a></li><li class="smenu"><a href="../contact/hong-kong/">Hong Kong</a></li><li class="smenu"><a href="../contact/beijing/">Beijing</a></li><li class="smenu"><a href="../contact/abu-dhabi/">Abu Dhabi</a></li><li class="smenu"><a href="../contact/shanghai/">Shanghai</a></li>		  	   </ul>
+		  </div>
+		  <div class="subcol newscol ">
+		  	   <ul class="smenu" > 
+			   <li><a href="../news/archive/">Archive</a></li>
+		  	   <li><a href="../news/pressroom/">Pressroom</a></li>
+		  		   <li id="smenu">&nbsp;</li>
+		  		   <li id="smenu">&nbsp;</li>
+		  		   <li id="smenu">&nbsp;</li>
+		  		   <li id="smenu">&nbsp;</li><li id="smenu">&nbsp;</li>
+		  		   <li><div class="tw16 soc"></div><div class="fb16 soc"></div><div class="li16 soc"></div><div class="yt16 soc"></div><div class="we16 soc"></div><div class="rss16 soc"></div></li>
+		  	   </ul>
+		  </div>	   
+	      </div>
+	    </div>
+</div>
+
+<!-- .end menu group -->
+<!-- .end nav --> 
+
+
+
+
+ 
+<div class="accordion-group clearback ">
+<div class="accordion-heading">
+<a class="accordion-toggle clickable arrowheadup "  data-toggle="collapse" data-parent="#subsections" href="#subsections">
+       <h3>About Us</h3>
+</a>
+	 
+</div>
+	 
+<div id="subsections" class="accordion-body collapse in ">
+<div class="accordion-inner">
+
+	<div class="column ">
+	<p>
+		<!-- <a href="studio/">Studio</a><br> -->
+		<a href="team/">Team</a><br>
+		<a href="the-way-we-work/">The Way we Work</a><br>
+		<a href="design-board/">Design Board</a>
+		
+	</p>
+	</div>
+
+	<div class='column second '>
+	<p>
+		<a href="team/senior-partners/">Senior Partners</a><br>
+		<a href="team/partners/">Partners</a><br>
+		<a href="team/associate-partners/">Associate Partners</a><br>
+		<a href="team/associates/">Associates</a><br>
+	</p>
+	</div>
+
+	<div class='column '>
+	<p>
+
+	</p>
+	</div>	   
+
+       
+</div>
+</div>  
+</div> <!-- .accordion-group -->
+
+<div class="accordion-group clearback fade" id="protext"> 
+<div class="accordion-heading">
+<a class="accordion-toggle " ></a>
+	 
+</div>
+	 
+<div id="subsections" class="accordion-body collapse in ">
+<div class="accordion-inner profiletext">
+	<div class="pro_txt"></div>
+</div>
+</div>  
+</div> <!-- .accordion-group -->
+
+</div><!-- .accordion -->
+
+
+</div> <!-- end outer -->
+
+
+</body>
+
+<!-- scripts -->
+
+<script type="text/javascript" src="../core/js/head.min.js"></script>
+
+<script type="text/javascript">
+
+var ADAPT_CONFIG = { path: '../core/css/', dynamic: true, range: ['0 to 1220 = fp.tab.001.css']}; 
+
+head.js(
+	
+"../core/js/jquery-1.7.2.min.js", 
+"../core/js/fp_scripts.001.t.js",
+"../core/js/jquery.backstretch.min.js",
+"../core/js/jquery.color.js",
+"../core/js/adapt.min.js",
+"../core/js/bootstrap-collapse.js",
+
+function() {
+	
+	$.backstretch("../data/profile/img0.jpg");
+	
+	$('.subcol a').hover(function(){
+	    $(this).stop().animate({ color:'#b4e114'}, "fast");
+	}, function() {
+	    $(this).stop().animate({color:'#ffffff'}, "slow");
+	});
+
+	$('.accordion-inner.profiletext').toggle();
+	
+	
+}); // end head 
+
+</script>
+
+<!-- end scripts -->
+
+</html>

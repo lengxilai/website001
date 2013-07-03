@@ -1,0 +1,97 @@
+/* tables */
+
+table.tablesorter {
+	width: 1182px;
+	background-color: #1b1b1b;
+	text-align: left;
+	/* padding-right: 6px; */
+	margin: 6px 0 0;
+}
+
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	font-size: 0.9em;
+	border-bottom: 1px solid #3b3b3b;
+	padding: 6px 4px 0 15px;
+	height: 30px;
+	color: white;
+}
+
+table.tablesorter thead tr .header {
+	background: #222222;
+	font-size: 0.9em;
+	padding-left: 15px;
+	cursor: pointer;
+	padding-top: 4px;
+	background-image: url(../img/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+	
+}
+
+@-moz-document url-prefix() {
+    table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+        /*padding: 18px 4px 4px 18px;*/
+        
+    }
+}
+table.tablesorter thead th {
+	border-right: 1px solid #34353a;
+}
+table.tablesorter tbody td {
+	
+	border-bottom: 1px solid #3b3c3d;
+	color: #bbb;
+	padding: 0 0 0 15px;
+	font-size: 0.9em;
+	margin-right: 6px;
+	
+	border-right: 1px solid #34353a;
+
+}
+
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(../img/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(../img/desc.gif);
+}
+
+table.tablesorter tr:hover {
+    background: #222222;
+    cursor: pointer;     
+}
+.yearcol {
+	width: 112px;
+}
+
+table.tablesorter p {
+	color: #bbb;
+}
+
+#title_col {
+	width: 700px;
+}
+
+#title_col_pub, #exhib_col {
+	width: 554px;
+}
+
+
+
+
+.yr_tr {
+	background: #34353a;
+	cursor: default !important;
+}
+
+#fat {
+	background: #222222;
+	height: 36px !important;
+	cursor: default !important;
+}
+
+#fat p  {
+	font-size: 1.1em;
+	padding-top: 3px;
+}

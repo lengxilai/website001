@@ -1,0 +1,116 @@
+.conc { display:none; }
+
+.accmenu, .backin { margin-right:6px; }
+
+.accmenu , .backin, #gallery { background-color:#1b1b1b; } 
+
+.accordion { margin-right: 0px; } 
+
+.accordion-heading.proj { 
+	background-color:#1b1b1b; 
+	width:1182px; 
+} 
+
+.container, .accordion-group  { background-color:#34353a; }
+
+#menu {
+		background-color: #1b1b1b !important;
+		margin-right: 6px;
+}
+
+.footer p {	padding: 4px 0 6px 8px; }
+
+#email { margin-right: 12px; }
+
+.pdfbarbutt {width: 300px; }
+
+#galleryouter {
+	overflow:hidden;  
+	/*margin-bottom:6px;*/ 
+} 
+#groups {
+	margin-top: 1px;
+}
+
+
+#pgallery { 
+	display: none;
+	overflow:hidden !important; 
+	background-color:#0b0b0b; 
+	width:1182px; 
+	height:739px; 
+	margin-top:4px; 
+	margin-bottom:6px;
+}
+
+.container0,
+.container1,
+.container2,
+.container3 {height:0; } 
+
+.videoholder { margin-top: 0; margin-bottom: 1px; }
+.vholder {margin-top: 15px; }
+
+.marker-image {
+    width:72px;
+    height:72px;
+    margin-left:-36px !important;
+    margin-top:-68px !important;
+    position:absolute;
+}
+.related {
+	width: 300px;
+	margin-bottom: 1px;
+	float: right;
+	height: 36px;
+	background-color: #1c1c1c;
+	border-left: 1px solid #333439;
+}
+
+
+
+.midrelated  {
+	border-left: none;
+	float: right;
+	width: 580px;
+
+
+}
+
+
+.projbutt.butt_related {
+	width: 200px;
+}
+
+.pdfbarbutt.projbutt.typebutt.related p,
+.pdfbarbutt.projbutt.typebuttprev.related p {
+	display:none;
+}
+
+.pnext, .typebutt { 
+	background: #1c1c1c url(../../core/img/rite.png) no-repeat 5% 50% 
+}
+
+
+.pprev, .typebuttprev { 
+	background: #1c1c1c url(../../core/img/left.png) no-repeat 95% 50% 
+}
+
+
+#map {
+	
+	z-index: 40000;
+	position: absolute;
+	width: 281px;
+	height: 281px;
+	border: 1px solid #343539;
+}
+
+.mapframe {
+	width: 3px;
+	height: 300px;
+	/*background-color: pink !important;*/
+}
+
+
+

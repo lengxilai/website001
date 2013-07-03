@@ -1,0 +1,733 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+<title>Map | Projects | Foster + Partners</title>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+<meta name="author" content="redboxmedia.com">
+<meta name="copyright" content="Foster + Partners">
+<meta name="viewport" content="width=890" />
+
+<!--[if IE]>
+	<script type="text/javascript"> window.location = 'map.php'; </script>
+<![endif]-->
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../m/core/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../m/core/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../m/core/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../../m/core/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../../favicon.ico?v=2" />
+
+<link rel="stylesheet" href="s/css/D8Fz3XWt+VC0VDejQHe7Mks5Qzc/www.fosterandpartners.com/9833.css" type="text/css" />  
+
+<link rel="stylesheet" href="../../core/css/fp2.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" href="mapbox.js/v0.6.7/mapbox.css" type="text/css" media="screen" />
+<!--[if lte IE 7]> 
+	<link rel="stylesheet" href="../../core/css/ie7.css" type="text/css" media="screen" /> 
+<![endif]-->
+
+<style> 
+
+.nudge { width:292px; } 
+
+.marker-image {
+    width:72px;
+    height:72px;
+    margin-left:-36px;
+    margin-top:-54px;
+    pointer-events:all;
+    position:absolute;
+}
+.marker-popup, .marker-tooltip, .map-point-div, .map-movetip {
+	background-image: url(../../core/img/map_icon_back.png);
+	background-color:#0b0b0b !important;
+	border:none  !important;
+    -webkit-box-shadow: none;
+             box-shadow: none;
+}
+.marker-popup p{
+	margin:0;
+	padding:0;
+    -webkit-border-radius:0;
+            border-radius:0;
+}
+.footer p {
+	padding-left:0;
+}
+.marker-popup a:hover {
+	color:white !important;
+}
+
+.marker-popup:before {
+  border-top-color:#0b0b0b;
+  border-width:9px;
+  margin-left:-9px;
+  }
+.marker-popup:after {
+     border-top-color:#0b0b0b;
+     border-width:6px;
+     margin-left:-6px;
+}
+
+.slider {
+	width: 1182px;
+	margin: 20px 0 12px 0 ;
+	/*the slider background*/
+	height:6px;
+	background:url(slider-bg.png);
+	position:relative;
+}
+ 
+/*Style for the slider button*/
+.ui-slider-handle {
+	width:12px;
+	height:24px;
+	position:absolute;
+	top:-8px;
+	margin-left:-6px;
+	z-index:200;
+	background:url(slider-button.png);
+}
+ 
+/*Result div where the slider value is displayed*/
+#slider-result{
+	float:left;
+	color:#fff;
+	width:962px ;
+	margin-top:6px;
+}
+
+.active { color:#b4e114 !important; }
+ 
+/*This is the fill bar colour*/
+.ui-widget-header {
+	background:url(fill.png) no-repeat left;
+	height:6px;
+	left:1px;
+	top:1px;
+	position:absolute;
+}
+ 
+a {
+	outline:none;
+	-moz-outline-style:none;
+}
+
+.ui-slider-range {
+	height:6px;
+}
+
+#yrs { float:left; }
+
+.invisi { display:none; }
+
+
+</style>
+
+	
+</head>
+
+<body>
+	<div class="outer">
+		<div class="search collapse " id="accordionSearch">
+		<iframe frameBorder='0' border='0' style="border:0;" id='searching' scrolling='no' src="../../search/" frameBorder="0" ></iframe>    
+	</div>  
+
+	<div class="nav">
+	<div class="navbar ">
+
+	<a href="../../"><div class="logo " >Foster + Partners</div></a>
+
+	<div class="srch " data-toggle="collapse" data-target="#accordionSearch" ></div>
+	<div class="mnubutton " data-toggle="collapse" data-target="#menu" ><h4>Menu</h4></div>
+
+	</div> <!-- .navbar -->
+	</div> <!-- .nav -->
+
+	<div class="clear"></div>
+
+	<div class="mainbar">
+	
+	    <h4><a class='headline subcol idcol profcol ' href="../../design-services/">Design Services</a></h4>
+		<h4><a class='headline subcol projcol ' href="../../about-us/">About Us</a></h4>
+		<h4><a class='headline subcol teamcol ' href="../../projects/">Projects</a></h4>
+		<h4><a class='headline subcol datacol ' href="../../practice-data/">Data</a></h4>
+		<h4><a class='headline subcol carcol ' href="../../careers/">Careers</a></h4>
+		<h4><a class='headline subcol concol ' href="../../contact/">Contact</a></h4>
+		<h4><a class='headline subcol ncol' href="../../news/">News</a></h4>
+
+	
+	</div>
+
+	<div class="clear"></div>
+
+	<div class="accordion" id="accordion">
+	
+	<!--  menu group -->
+
+	<div class="accordion-group">
+	
+		    <div id="menu" class="accordion-body collapse">
+		      <div class="accordion-inner">
+			  	<div class="subcol idcol">
+			  	<ul class="smenuh" > 
+			  		<li><a href="../../design-services/architecture/">Architecture</a></li>
+			  		<li><a href="../../design-services/environmental-engineering/">Environmental Engineering</a></li>
+			  		<li><a href="../../design-services/structural-engineering/">Structural Engineering</a></li>
+			  		<li><a href="../../design-services/interiors/">Interiors</a></li>
+			  		<li><a href="../../design-services/industrial-design/">Industrial Design</a></li>
+			  		<li><a href="../../design-services/project-management/">Project Management</a></li>
+			  		<li><a href="../../design-services/urban-design/">Urban Design</a></li>
+			  		<li><a href="../../design-services/workplace-consultancy/">Workplace Consultancy</a></li>
+			  		<li><a href="../../design-services/research/">Research</a></li>
+			  		<li><a href="../../design-services/sustainability/">Sustainability</a></li>
+			  		<li><a href="../../design-services/design-support/">Design Support</a></li>
+			  	</ul>
+			  	</div>
+
+
+			  	<div class="subcol">
+			  		<ul class="smenuh" > 
+			  			<li><a href="../../about-us/team/">Team</a></li>		
+			  			<li><a href="../../about-us/the-way-we-work/">The Way we Work</a></li>
+			  			<li><a href="../../about-us/design-board/">Design Board</a></li>
+			  		</ul>
+			  	</div>
+
+
+			  	<div class="subcol tmenu">
+			  	<ul class="smenuh" > 
+			  		   <li><a href="../../projects/type/">Type</a></li>
+			  		   <li><a class="select" href="../../projects/map/">Map</a></li>
+			  		   <li><a href="../../projects/on-site/">On Site</a></li>
+			  		   <li><a href="../../projects/list/">List</a></li>	   
+			  		   <li><a href="../../projects/stored/">Stored Projects</a></li>
+			  	</ul>
+			  	</div>
+		
+			  <div class="subcol dmenu">
+			  	    <ul class="smenu" > 
+			  	   <li><a href="../../practice-data/awards/">Awards</a></li>
+			  	   <li><a href="../../practice-data/competitions/">Competitions</a></li>
+			  	   <li><a href="../../practice-data/exhibitions/">Exhibitions</a></li>
+			  	   <li><a href="../../practice-data/publications/">Publications</a></li>
+			  	   <li><a href="../../practice-data/essays/">Essays</a></li>
+<li><a href="../../practice-data/links/">Links</a></li>
+			       <li><a href="../../practice-data/videos/">Videos</a></li>
+			  	   </ul>
+			  </div>
+			  <div class="subcol carmenu">
+			  	    <ul class="smenu" > 
+			  	   <li><a href="../../careers/graduate-show/">Graduate Show</a></li>
+			  	   <li><a href="../../careers/scholarship">Scholarship</a></li>
+			  	   </ul>
+			  </div>
+			  <div class="subcol conmenu">
+			  	     <ul class="smenu" > 
+			  	   <li class="smenu"><a href="../../contact/london/">London</a></li><li class="smenu"><a href="../../contact/new-york/">New York</a></li><li class="smenu"><a href="../../contact/madrid/">Madrid</a></li><li class="smenu"><a href="../../contact/hong-kong/">Hong Kong</a></li><li class="smenu"><a href="../../contact/beijing/">Beijing</a></li><li class="smenu"><a href="../../contact/abu-dhabi/">Abu Dhabi</a></li><li class="smenu"><a href="../../contact/shanghai/">Shanghai</a></li>			  	   </ul>
+			  </div>
+			  <div class="subcol newscol ">
+			  	   <ul class="smenu" > 
+				   <li><a href="../../news/archive/">Archive</a></li>
+			  	   <li><a href="../../news/pressroom/">Pressroom</a></li>
+			  		   <li id="smenu">&nbsp;</li>
+			  		   <li id="smenu">&nbsp;</li>
+			  		   <li id="smenu">&nbsp;</li>
+			  		   <li id="smenu">&nbsp;</li>
+			  		   <li><div class="tw16 soc"></div><div class="fb16 soc"></div><div class="li16 soc"></div><div class="yt16 soc"></div><div class="we16 soc"></div><div class="rss16 soc"></div></li>
+			  	   </ul>
+			  </div>	
+		     
+	</div>
+	</div>
+	</div>
+
+	<!-- .end menu group -->
+	<!-- .end nav --> 
+	
+	
+
+
+
+<div class="accordion-group">
+	
+   <div class="accordion-heading">
+     <a class="accordion-toggle  clickable arrowheadup  " data-toggle="collapse" data-parent="#accordion2" href="#locations">
+       <h3><span class='up'>Projects</span> &nbsp;<span class="pipe">/</span>&nbsp; Map</h3>
+     </a>
+   </div>
+	 
+    <div id="locations" class="accordion-body collapse in ">
+<div class="accordion-inner">
+
+<div class='subcol first double  '>
+<a id="europe" href="#" >Europe</a><br>
+<a id="northamerica" href="#" >North America</a><br>
+<a id="southamerica" href="#" >South America</a>	
+</div> 
+	   
+<div class='subcol double nudge  '>  
+<a id="middleeast" href="#" >Middle East</a><br>
+<a id="southeastasia" href="#" >South East Asia</a><br>
+<a id="australasia" href="#" >Australasia</a>
+</div> 
+	   
+
+<div class='subcol  '>
+<a id="unitedkingdom" href="#" >United Kingdom</a><br>
+<a id="greaterlondon" href="#" >London</a><br>
+<a id='geolocate' href="#" >My Location</a>
+
+</div>
+       
+</div>
+</div> 
+   
+</div> <!-- .accordion-group -->
+
+<div class="accordion-group">
+	
+   <div class="accordion-heading">
+     <a class="accordion-toggle  clickable arrowheadup  " data-toggle="collapse" data-parent="#accordion2" href="#projecttypes">
+       <h3>Filter</h3>
+     </a>
+   </div>
+	 
+    <div id="projecttypes" class="accordion-body collapse in ">
+<div class="accordion-inner">
+
+<div class='subcol first double smltext '>
+	<a href='#' id='filter-brid'>Bridge</a><br>
+	<a href='#' id='filter-comm'>Communication</a><br>
+	<a href='#' id='filter-cult'>Culture</a><br>
+	<a href='#' id='filter-gove'>Government</a><br>
+	<a href='#' id='filter-heal'>Health + Education</a><br>
+	<a href='#' id='filter-hous'>Housing</a>
+</div> 
+	   
+<div class='subcol double nudge smltext '>  
+
+	<a href='#' id='filter-indu'>Industrial</a><br>
+	<a href='#' id='filter-leis'>Leisure + Sport</a><br>
+	<a href='#' id='filter-mast'>Master Planning</a><br>
+	<a href='#' id='filter-mixe'>Mixed Use</a><br>
+	<a href='#' id='filter-offi'>Office</a><br>
+	<a href='#' id='filter-rese'>Research + Development</a>
+</div> 
+	   
+
+<div class='subcol smltext  '>
+	
+	<a href='#' id='filter-rete'>Retail</a><br>
+	<a href='#' id='filter-tran'>Transport</a><br>
+	<a href='#' id='filter-team'>Team 4</a><br><br><br>
+	<a href='#' id='filter-all'>Clear Filter</a>
+</div>
+       
+</div>
+</div> 
+   
+</div> <!-- .accordion-group -->
+ 		   
+</div><!-- .accordion -->
+
+<div class="container">
+
+<div id='map_canvas'>&nbsp;</div>
+
+<div class="slider"></div>
+<div id="slider-result"><p>Projects <span class="select">1967 - 2013</span></p></div><img id='yrs' src='years.png'/>
+
+
+</div> <!-- .container -->
+
+<div class="clear"></div>
+
+<div class="footer">
+	
+<p>&copy; Foster + Partners 2013</p>
+<div class='socfoot'><div class="tw16 soc"></div><div class="fb16 soc"></div><div class="li16 soc"></div><div class="yt16 soc"></div><div class="we16 soc"></div><div class="rss16 soc"></div></div>
+
+<p id='email'><a href='#top'>Top</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='mailto:?subject=Foster %2b Partners %2f Projects %2f Map&body=http://www.fosterandpartners.com/projects/map/'>Email link to this page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='mailto:info@fosterandpartners.com'>info@fosterandpartners.com</a></p> 
+ 
+</div> <!-- end footer -->
+
+</div> <!-- end outer -->
+
+</body>
+
+<!-- scripts -->
+
+<script type="text/javascript" src="../../core/js/head.min.js"></script>
+
+<script type="text/javascript">
+
+var ADAPT_CONFIG = { path: '../../core/css/', dynamic: false, range: ['0 to 1220 = fp.tab.001.css']}; 
+
+head.js(
+	
+"http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js",
+"http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js",
+"../../core/js/fp_scripts.001.js", 
+"../../core/js/jquery.color.js",
+"../../core/js/adapt.min.js",
+"../../core/js/bootstrap-collapse.js",
+
+"http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js",
+"../../core/js/jquery.cookie.js",
+
+function() {
+	
+	  $.cookie('ptype', 'map', { expires: 1, path: '/' });
+
+$(document).ready(function() {
+	
+	function launchActions() {
+
+
+// menu stack init
+
+// $(".collapse").collapse('hide');
+// $(".collapsesub").collapse();
+ $('#slider-bubble').hide();
+
+// map time
+var map = mapbox.map('map_canvas');
+map.addLayer(mapbox.layer().id('redbox.map-v3kwa30o'));
+map.ui.zoomer.add();
+
+
+map.ui.attribution.remove();
+map.setZoomRange(2, 17);
+  
+// Create and add marker layer
+var markerLayer = mapbox.markers.layer().features([
+	 
+{ "geometry": { "type": "Point", "coordinates": [-0.08000, 51.505]},"properties": { "titl": "3 More London Riverside", "typ": "m ", "year": "2006","lnk": "../3-more-london-riverside/", "image": "../../data/projects/1230/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [35.49736, 33.89897]},"properties": { "titl": "3Beirut", "typ": "h l m p ", "year": "2008","lnk": "../3beirut/", "image": "../../data/projects/1766/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-95.94611, 41.26027]},"properties": { "titl": "Addition to Joslyn Art Museum", "typ": "d ", "year": "1994","lnk": "../addition-to-joslyn-art-museum/", "image": "../../data/projects/0683/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [46.68527, 24.69027]},"properties": { "titl": "Al Faisaliah Complex", "typ": "d h j l p ", "year": "2000","lnk": "../al-faisaliah-complex/", "image": "../../data/projects/0768/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [39.81483, 21.42738]},"properties": { "titl": "Al Haramain High Speed Rail", "typ": "q ", "year": "2009","lnk": "../al-haramain-high-speed-rail/", "image": "../../data/projects/1794/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [54.5183, 24.4262]},"properties": { "titl": "Al Raha Beach Development", "typ": "l m p h j ", "year": "2007","lnk": "../al-raha-beach-development/", "image": "../../data/projects/1463/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.16972, 51.48028]},"properties": { "titl": "Albion Riverside", "typ": "h l m p ", "year": "2003","lnk": "../albion-riverside/", "image": "../../data/projects/1001/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [54.35638, 24.48805]},"properties": { "titl": "Aldar Central Market", "typ": "l ", "year": "2011","lnk": "../aldar-central-market/", "image": "../../data/projects/1431/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-58.37716, -34.60641]},"properties": { "titl": "The Aleph", "typ": "l ", "year": "2012","lnk": "../the-aleph/", "image": "../../data/projects/1337/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.07668, 51.51969]},"properties": { "titl": "Allen & Overy HQ, 1 Bishops Square", "typ": "m ", "year": "2005","lnk": "../allen-&-overy-hq-1-bishops-square/", "image": "../../data/projects/1146/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [0.12577, 52.09274]},"properties": { "titl": "American Air Museum", "typ": "d ", "year": "1997","lnk": "../american-air-museum/", "image": "../../data/projects/0413/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-7.66537, 33.59875]},"properties": { "titl": "Anfa Place", "typ": "h j l m ", "year": "2007","lnk": "../anfa-place/", "image": "../../data/projects/1560/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [6.80053, 51.24986]},"properties": { "titl": "Arag", "typ": "m ", "year": "2001","lnk": "../arag/", "image": "../../data/projects/0918/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [18.04388, 59.30916]},"properties": { "titl": "Arsta Bridge", "typ": "a ", "year": "2005","lnk": "../arsta-bridge/", "image": "../../data/projects/0801/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.31158, 51.63042]},"properties": { "titl": "Aspire Sports Centre", "typ": "g j  ", "year": "1998","lnk": "../aspire-sports-centre/", "image": "../../data/projects/0880/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.14253, 51.51019]},"properties": { "titl": "Asprey Store, Bond Street", "typ": "p ", "year": "2004","lnk": "../asprey-store-bond-street/", "image": "../../data/projects/1151/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-73.97416, 40.76241]},"properties": { "titl": "Asprey Store New York", "typ": "p ", "year": "2004","lnk": "../asprey-store-new-york/", "image": "../../data/projects/1191/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-58.40701, -34.64084]},"properties": { "titl": "Banco Ciudad Corporate Offices", "typ": "m ", "year": "2010","lnk": "../banco-ciudad-corporate-offices/", "image": "../../data/projects/1895/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [57.36003, -20.42855]},"properties": { "titl": "Banyan Tree Corniche Bay", "typ": "j k ", "year": "2006","lnk": "../banyan-tree-corniche-bay/", "image": "../../data/projects/1465/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.143850, 51.517711]},"properties": { "titl": "BBC Radio Centre", "typ": "b m  ", "year": "1982","lnk": "../bbc-radio-centre/", "image": "../../data/projects/0320/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [103.85586, 1.29435]},"properties": { "titl": "Beach Road", "typ": "l m p ", "year": "2007","lnk": "../beach-road/", "image": "../../data/projects/1545/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [116.60918, 40.05505]},"properties": { "titl": "Beijing Airport", "typ": "q ", "year": "2008","lnk": "../beijing-airport/", "image": "../../data/projects/1235/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [0.13309, 51.49665]},"properties": { "titl": "Bexley Business Academy", "typ": "g ", "year": "2003","lnk": "../bexley-business-academy/", "image": "../../data/projects/1154/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-2.92779, 43.26135]},"properties": { "titl": "Bilbao Metro", "typ": "q ", "year": "1995","lnk": "../bilbao-metro/", "image": "../../data/projects/0445/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-114.062209, 51.047788]},"properties": { "titl": "The Bow", "typ": "l m ", "year": "2013","lnk": "../the-bow/", "image": "../../data/projects/1417/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.08691, 51.52027]},"properties": { "titl": "Bloomberg HQ, 50 Finsbury Square", "typ": "m ", "year": "2000","lnk": "../bloomberg-hq-50-finsbury-square/", "image": "../../data/projects/0976/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-6.86917, 33.94956]},"properties": { "titl": "BMCE Branches", "typ": "p ", "year": "2007","lnk": "../bmce-branches/", "image": "../../data/projects/1642/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-9.35, 38.75]},"properties": { "titl": "Boavista", "typ": "k ", "year": "2003","lnk": "../boavista/", "image": "../../data/projects/1241/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [6.78808, 51.43277]},"properties": { "titl": "Business Promotion Centre", "typ": "m ", "year": "1993","lnk": "../business-promotion-centre/", "image": "../../data/projects/0459/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-119.04357, 34.16205]},"properties": { "titl": "California State University Channel Islands", "typ": "g ", "year": "2008","lnk": "../california-state-university-channel-islands/", "image": "../../data/projects/1081/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [2.12283, 41.38089]},"properties": { "titl": "Camp Nou Stadium for FC Barcelona", "typ": "j ", "year": "2007","lnk": "../camp-nou-stadium-for-fc-barcelona/", "image": "../../data/projects/1552/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-99.1257, 19.1801]},"properties": { "titl": "Campus Biometropolis masterplan", "typ": "g o k ", "year": "2009","lnk": "../campus-biometropolis-masterplan/", "image": "../../data/projects/1820/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.01861, 51.50361]},"properties": { "titl": "Canary Wharf Underground Station", "typ": "q ", "year": "1999","lnk": "../canary-wharf-underground-station/", "image": "../../data/projects/0579/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [103.82488, 1.24946]},"properties": { "titl": "Capella Singapore", "typ": "j ", "year": "2009","lnk": "../capella-singapore/", "image": "../../data/projects/1265/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.23434, 51.53846]},"properties": { "titl": "Capital City Academy", "typ": "g ", "year": "2003","lnk": "../capital-city-academy/", "image": "../../data/projects/1128/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [4.35515, 43.83808]},"properties": { "titl": "Carré d'Art", "typ": "d ", "year": "1993","lnk": "../carre-dart/", "image": "../../data/projects/0344/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [113.93345, 22.31510]},"properties": { "titl": "Cathay Pacific Lounges, Hong Kong International Airport", "typ": "q ", "year": "2012","lnk": "../cathay-pacific-lounges-hong-kong-international-airport/", "image": "../../data/projects/1663/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-122.17750, 37.43263]},"properties": { "titl": "Center for Clinical Science Research", "typ": "g o ", "year": "2000","lnk": "../center-for-clinical-science-research/", "image": "../../data/projects/0886/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-3.24204, 55.97969]},"properties": { "titl": "Centrica, Scottish Gas HQ", "typ": "m ", "year": "2003","lnk": "../centrica-scottish-gas-hq/", "image": "../../data/projects/1141/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [139.75973, 35.70225]},"properties": { "titl": "Century Tower", "typ": "l m ", "year": "1991","lnk": "../century-tower/", "image": "../../data/projects/0409/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.668706, 45.044418]},"properties": { "titl": "Château Margaux", "typ": "i j ", "year": "2009","lnk": "../chateau-margaux/", "image": "../../data/projects/1868/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [113.93589, 22.31561]},"properties": { "titl": "Chek Lap Kok Airport", "typ": "q ", "year": "1998","lnk": "../chek-lap-kok-airport/", "image": "../../data/projects/0639/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [9.83756, 46.49921]},"properties": { "titl": "Chesa Futura", "typ": "h ", "year": "2004","lnk": "../chesa-futura/", "image": "../../data/projects/1085/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-2.41638, 51.31124]},"properties": { "titl": "CircleBath", "typ": "g ", "year": "2009","lnk": "../circlebath/", "image": "../../data/projects/1442/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.018273, 51.504154]},"properties": { "titl": "Citibank", "typ": "m ", "year": "2000","lnk": "../citibank/", "image": "../../data/projects/0923/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [120.16507, 30.25262]},"properties": { "titl": "Citic Bank HQ", "typ": "m ", "year": "2009","lnk": "../citic-bank-hq/", "image": "../../data/projects/1844/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-77.02416, 38.89994]},"properties": { "titl": "City Center DC", "typ": "h l k m p ", "year": "2006","lnk": "../city-center-dc/", "image": "../../data/projects/1489/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.07833, 51.50472]},"properties": { "titl": "City Hall", "typ": "f m ", "year": "2002","lnk": "../city-hall/", "image": "../../data/projects/1027/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-122.17430, 37.43167]},"properties": { "titl": "Clark Center, Stanford University", "typ": "g o ", "year": "2003","lnk": "../clark-center-stanford-university/", "image": "../../data/projects/1076/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [8.67445, 50.11108]},"properties": { "titl": "Commerzbank Headquarters", "typ": "m ", "year": "1997","lnk": "../commerzbank-headquarters/", "image": "../../data/projects/0626/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.64227, 52.50853]},"properties": { "titl": "Corby Academy", "typ": "g ", "year": "2008","lnk": "../corby-academy/", "image": "../../data/projects/1311/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.62735, 52.07272]},"properties": { "titl": "Cranfield University Library", "typ": "g ", "year": "1992","lnk": "../cranfield-university-library/", "image": "../../data/projects/0506/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-5.046908, 50.208000]},"properties": { "titl": "Creek Vean", "typ": "h t  ", "year": "1966","lnk": "../creek-vean/", "image": "../../data/projects/0076/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [1.23589, 52.61975]},"properties": { "titl": "Crescent Wing, Sainsbury Centre for Visual Arts", "typ": "d ", "year": "1991","lnk": "../crescent-wing-sainsbury-centre-for-visual-arts/", "image": "../../data/projects/0441/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [114.130486, 22.26042]},"properties": { "titl": "Cyberport", "typ": "h ", "year": "2008","lnk": "../cyberport/", "image": "../../data/projects/1339/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-96.798019, 32.790825]},"properties": { "titl": "Dallas Artist Square", "typ": "k d  ", "year": "2009","lnk": "../dallas-artist-square/", "image": "../../data/projects/1428/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [151.21172, -33.86695]},"properties": { "titl": "Deutsche Bank Place", "typ": "l m ", "year": "2005","lnk": "../deutsche-bank-place/", "image": "../../data/projects/1157/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-1.16404, 52.96695]},"properties": { "titl": "Djanogly City Academy", "typ": "g ", "year": "2005","lnk": "../djanogly-city-academy/", "image": "../../data/projects/1192/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [8.57326, 47.37286]},"properties": { "titl": "Dolder Grand Hotel", "typ": "j ", "year": "2008","lnk": "../dolder-grand-hotel/", "image": "../../data/projects/1171/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [13.73138, 51.04027]},"properties": { "titl": "Dresden Station Redevelopment", "typ": "q ", "year": "2006","lnk": "../dresden-station-redevelopment/", "image": "../../data/projects/0916/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [6.77318, 51.43198]},"properties": { "titl": "Duisburg City Masterplan", "typ": "k ", "year": "2007","lnk": "../duisburg-city-masterplan/", "image": "../../data/projects/1443/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [6.76890, 51.44017]},"properties": { "titl": "Duisburg Hafenforum", "typ": "m ", "year": "1994","lnk": "../duisburg-hafenforum/", "image": "../../data/projects/0796/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [6.76910, 51.43978]},"properties": { "titl": "Duisburg Housing", "typ": "h ", "year": "2001","lnk": "../duisburg-housing/", "image": "../../data/projects/0956/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [6.76655, 51.44100]},"properties": { "titl": "Duisburg Inner Harbour Masterplan", "typ": "k ", "year": "2003","lnk": "../duisburg-inner-harbour-masterplan/", "image": "../../data/projects/0576/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.60364, 44.79496]},"properties": { "titl": "Electricité de France Regional Headquarters", "typ": "m ", "year": "1996","lnk": "../electricite-de-france-regional-headquarters/", "image": "../../data/projects/0753/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.53069, 51.37108]},"properties": { "titl": "Electronic Arts European Headquarters", "typ": "m ", "year": "2000","lnk": "../electronic-arts-european-headquarters/", "image": "../../data/projects/0958/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [12.52354, 55.67245]},"properties": { "titl": "Elephant House, Copenhagen Zoo", "typ": "j ", "year": "2008","lnk": "../elephant-house-copenhagen-zoo/", "image": "../../data/projects/1195/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.08131, 51.50529]},"properties": { "titl": "Ernst & Young Headquarters, 1 More London Place", "typ": "m ", "year": "2003","lnk": "../ernst-&-young-headquarters-1-more-london-place/", "image": "../../data/projects/1099/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.16019, 51.50108]},"properties": { "titl": "Esprit Shop", "typ": "p ", "year": "1988","lnk": "../esprit-shop/", "image": "../../data/projects/0410/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [7.04388, 51.486388]},"properties": { "titl": "Essen Design Centre", "typ": "d ", "year": "1997","lnk": "../essen-design-centre/", "image": "../../data/projects/0495/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [6.76738, 51.44248]},"properties": { "titl": "Eurogate", "typ": "l ", "year": "2006","lnk": "../eurogate/", "image": "../../data/projects/1406/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [103.96143, 1.33434]},"properties": { "titl": "EXPO Station", "typ": "q ", "year": "2000","lnk": "../expo-station/", "image": "../../data/projects/0966/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [0.10975, 52.20186]},"properties": { "titl": "Faculty of Law, University of Cambridge", "typ": "g ", "year": "1995","lnk": "../faculty-of-law-university-of-cambridge/", "image": "../../data/projects/0541/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-80.123299, 25.807283]},"properties": { "titl": "Faena House", "typ": "h ", "year": "2011","lnk": "../faena-house/", "image": "../../data/projects/1965/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-3.69415, 41.76845]},"properties": { "titl": "Faustino Winery", "typ": "i j ", "year": "2010","lnk": "../faustino-winery/", "image": "../../data/projects/1327/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [11.24318, 43.78487]},"properties": { "titl": "Florence TAV Station", "typ": "q ", "year": "2003","lnk": "../florence-tav-station/", "image": "../../data/projects/1194/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [1.166944, 51.09222]},"properties": { "titl": "Folkestone Academy", "typ": "g ", "year": "2007","lnk": "../folkestone-academy/", "image": "../../data/projects/1271/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-87.78998, 42.71446]},"properties": { "titl": "Fortaleza Hall and the Commons, SC Johnson", "typ": "d l ", "year": "2010","lnk": "../fortaleza-hall-and-the-commons-sc-johnson/", "image": "../../data/projects/1450/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [13.28829, 52.45205]},"properties": { "titl": "Free University", "typ": "g ", "year": "2005","lnk": "../free-university/", "image": "../../data/projects/0980/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [2.24440, 48.90555]},"properties": { "titl": "Garennes", "typ": "l m  ", "year": "-   ","lnk": "../garennes/", "image": "../../data/projects/1523/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [6.94088, 50.94125]},"properties": { "titl": "Gerling Ring", "typ": "h j l m  ", "year": "2001","lnk": "../gerling-ring/", "image": "../../data/projects/0856/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-17.218632, 28.113878]},"properties": { "titl": "Gomera Masterplan", "typ": "k ", "year": "1975","lnk": "../gomera-masterplan/", "image": "../../data/projects/0205/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.12694, 51.51944]},"properties": { "titl": "Great Court at the British Museum", "typ": "d ", "year": "2000","lnk": "../great-court-at-the-british-museum/", "image": "../../data/projects/0793/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-4.14671, 51.84198]},"properties": { "titl": "Great Glass House", "typ": "j ", "year": "2000","lnk": "../great-glass-house/", "image": "../../data/projects/0861/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [113.92879, 22.29894]},"properties": { "titl": "HACTL Superterminal", "typ": "i m q ", "year": "1998","lnk": "../hactl-superterminal/", "image": "../../data/projects/0734/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-73.98369, 40.76663]},"properties": { "titl": "Hearst Tower", "typ": "m  ", "year": "2006","lnk": "../hearst-tower/", "image": "../../data/projects/1124/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.129088, 51.50171]},"properties": { "titl": "Her Majesty's Treasury Redevelopment", "typ": "m ", "year": "2002","lnk": "../her-majestys-treasury-redevelopment/", "image": "../../data/projects/0898/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [2.25139, 48.88883]},"properties": { "titl": "Hermitage Plaza", "typ": "h p l m ", "year": "2008","lnk": "../hermitage-plaza/", "image": "../../data/projects/1727/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-3.60975, 40.48385]},"properties": { "titl": "High Court of Justice and Supreme Court, City of Justice", "typ": "f ", "year": "2006","lnk": "../high-court-of-justice-and-supreme-court-city-of-justice/", "image": "../../data/projects/1453/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.108295, 51.517536]},"properties": { "titl": "Holborn Place", "typ": "m ", "year": "2000","lnk": "../holborn-place/", "image": "../../data/projects/0765/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [114.15944, 22.28000]},"properties": { "titl": "Hongkong and Shanghai Bank Headquarters", "typ": "m ", "year": "1986","lnk": "../hongkong-and-shanghai-bank-headquarters/", "image": "../../data/projects/0501/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.01797, 51.50545]},"properties": { "titl": "HSBC UK Headquarters", "typ": "m ", "year": "2002","lnk": "../hsbc-uk-headquarters/", "image": "../../data/projects/1009/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-4.28351, 55.85985]},"properties": { "titl": "The SSE Hydro", "typ": "d j ", "year": "2005","lnk": "../the-sse-hydro/", "image": "../../data/projects/1298/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-1.07237, 50.83912]},"properties": { "titl": "IBM Pilot Head Office", "typ": "m ", "year": "1971","lnk": "../ibm-pilot-head-office/", "image": "../../data/projects/0125/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [ 101.7186, 3.1586]},"properties": { "titl": "Ilham Baru", "typ": "m h l  ", "year": "2009","lnk": "../ilham-baru/", "image": "../../data/projects/1784/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.17480, 51.49920]},"properties": { "titl": "Imperial College Business School", "typ": "g m ", "year": "2004","lnk": "../imperial-college-business-school/", "image": "../../data/projects/1122/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.17567, 51.49874]},"properties": { "titl": "Imperial College Faculty Building", "typ": "g m ", "year": "2004","lnk": "../imperial-college-faculty-building/", "image": "../../data/projects/1165/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.17781, 51.49777]},"properties": { "titl": "Imperial College, Flowers Building", "typ": "g o ", "year": "2001","lnk": "../imperial-college-flowers-building/", "image": "../../data/projects/0871/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.17645, 51.49780]},"properties": { "titl": "Imperial College, Sir Alexander Fleming Building", "typ": "g o ", "year": "1998","lnk": "../imperial-college-sir-alexander-fleming-building/", "image": "../../data/projects/0807/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.108365, 51.496018]},"properties": { "titl": "Imperial War Museum", "typ": "k d ", "year": "2010","lnk": "../imperial-war-museum/", "image": "../../data/projects/1893/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [55.27767, 25.20758]},"properties": { "titl": "The Index", "typ": "h l m p ", "year": "2011","lnk": "../the-index/", "image": "../../data/projects/1309/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-3.698111, 40.452192]},"properties": { "titl": "Ivorypress", "typ": "m d p  ", "year": "2008","lnk": "../ivorypress/", "image": "../../data/projects/1627/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.318102, 51.692982]},"properties": { "titl": "Jaffe House (Skybreak House)", "typ": "h t ", "year": "1966","lnk": "../jaffe-house-(skybreak-house)/", "image": "../../data/projects/0083/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-123.11537, 49.28629]},"properties": { "titl": "Jameson House", "typ": "h p l m ", "year": "2004","lnk": "../jameson-house/", "image": "../../data/projects/1289/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.319546, 51.484749]},"properties": { "titl": "JCDecaux Headquarters", "typ": "m  ", "year": "2000","lnk": "../jcdecaux-headquarters/", "image": "../../data/projects/0987/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [121.49523, 31.22706]},"properties": { "titl": "Jiushi Corporation Headquarters", "typ": "m ", "year": "2001","lnk": "../jiushi-corporation-headquarters/", "image": "../../data/projects/0810/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [114.20770, 22.31220]},"properties": { "titl": "Kai Tak Cruise Terminal", "typ": "q ", "year": "2010","lnk": "../kai-tak-cruise-terminal/", "image": "../../data/projects/1843/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [139.55043, 35.31877]},"properties": { "titl": "Kamakura House", "typ": "d h ", "year": "2004","lnk": "../kamakura-house/", "image": "../../data/projects/0932/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.169211, 51.494061]},"properties": { "titl": "Katharine Hamnett Shop", "typ": "p  ", "year": "1987","lnk": "../katharine-hamnett-shop/", "image": "../../data/projects/0379/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [71.40389, 51.13222]},"properties": { "titl": "Khan Shatyr Entertainment Centre", "typ": "j ", "year": "2010","lnk": "../khan-shatyr-entertainment-centre/", "image": "../../data/projects/1438/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [72.8842, 19.0721]},"properties": { "titl": "Kurla", "typ": "m ", "year": "2007","lnk": "../kurla/", "image": "../../data/projects/1610/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [47.9831, 29.2210]},"properties": { "titl": "Kuwait International Airport", "typ": "q ", "year": "2011","lnk": "../kuwait-international-airport/", "image": "../../data/projects/1879/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.55457, 51.50307]},"properties": { "titl": "Langley Academy", "typ": "g ", "year": "2008","lnk": "../langley-academy/", "image": "../../data/projects/1324/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [103.797119, 1.31693]},"properties": { "titl": "Leedon Park House", "typ": "h ", "year": "2006","lnk": "../leedon-park-house/", "image": "../../data/projects/1239/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [11.56361, 48.14694]},"properties": { "titl": "Lenbachhaus", "typ": "d ", "year": "2013","lnk": "../lenbachhaus/", "image": "../../data/projects/1802/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-79.39131, 43.66006]},"properties": { "titl": "Leslie L. Dan Pharmacy Building", "typ": "g o ", "year": "2006","lnk": "../leslie-l-dan-pharmacy-building/", "image": "../../data/projects/1183/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.28900, 51.62200]},"properties": { "titl": "London Academy, Edgware", "typ": "g ", "year": "2006","lnk": "../london-academy-edgware/", "image": "../../data/projects/1193/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.11568, 51.514626]},"properties": { "titl": "LSE Library", "typ": "g ", "year": "2001","lnk": "../lse-library/", "image": "../../data/projects/0756/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [6.75571, 43.44282]},"properties": { "titl": "Lycée Albert Camus", "typ": "g ", "year": "1993","lnk": "../lycee-albert-camus/", "image": "../../data/projects/0528/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [2.377231, 48.82989]},"properties": { "titl": "France Avenue", "typ": "m ", "year": "2004","lnk": "../france-avenue/", "image": "../../data/projects/1087/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [7.63352, 51.21605]},"properties": { "titl": "Maack Schreiter House", "typ": "h ", "year": "1994","lnk": "../maack-schreiter-house/", "image": "../../data/projects/0659/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-96.79805, 32.79083]},"properties": { "titl": "Margot and Bill Winspear Opera House", "typ": "d ", "year": "2009","lnk": "../margot-and-bill-winspear-opera-house/", "image": "../../data/projects/1173/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [4.48609, 51.90569]},"properties": { "titl": "Marine Simulation Centre", "typ": "j ", "year": "1993","lnk": "../marine-simulation-centre/", "image": "../../data/projects/0682/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [5.373878, 43.295057]},"properties": { "titl": "Marseille Vieux Port", "typ": "k ", "year": "2011","lnk": "../marseille-vieux-port/", "image": "../../data/projects/1980/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [54.61830, 24.42917]},"properties": { "titl": "Masdar Development", "typ": "k ", "year": "2007","lnk": "../masdar-development/", "image": "../../data/projects/1515/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [54.61833, 24.42916]},"properties": { "titl": "Masdar Institute", "typ": "g o ", "year": "2010","lnk": "../masdar-institute/", "image": "../../data/projects/1605/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [ -0.54510, 51.34353]},"properties": { "titl": "McLaren Production Centre", "typ": "m o i ", "year": "2011","lnk": "../mclaren-production-centre/", "image": "../../data/projects/1829/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.54800, 51.34692]},"properties": { "titl": "McLaren Technology Centre", "typ": "i m o ", "year": "2004","lnk": "../mclaren-technology-centre/", "image": "../../data/projects/0995/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.11840, 51.51213]},"properties": { "titl": "ME Hotel", "typ": "j ", "year": "2013","lnk": "../me-hotel/", "image": "../../data/projects/1301/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [21.01221, 52.24239]},"properties": { "titl": "Metropolitan, Pilsudski Square", "typ": "m ", "year": "2003","lnk": "../metropolitan-pilsudski-square/", "image": "../../data/projects/0986/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [ 6.78845, 51.42967]},"properties": { "titl": "Microelectronic Centre", "typ": "k m ", "year": "1996","lnk": "../microelectronic-centre/", "image": "../../data/projects/0703/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [3.02268, 44.07841]},"properties": { "titl": "Millau Viaduct", "typ": "a q ", "year": "2004","lnk": "../millau-viaduct/", "image": "../../data/projects/1158/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.09843, 51.51017]},"properties": { "titl": "Millennium Bridge", "typ": "a q ", "year": "2000","lnk": "../millennium-bridge/", "image": "../../data/projects/0953/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [101.692001, 3.10477]},"properties": { "titl": "Mont Kiara", "typ": "h ", "year": "2009","lnk": "../mont-kiara/", "image": "../../data/projects/1876/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.08948, 51.51794]},"properties": { "titl": "Moor House", "typ": "m ", "year": "2005","lnk": "../moor-house/", "image": "../../data/projects/0996/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.08066, 51.50389]},"properties": { "titl": "More London Masterplan", "typ": "k ", "year": "2003","lnk": "../more-london-masterplan/", "image": "../../data/projects/1011/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.13055, 41.03472]},"properties": { "titl": "Motor City", "typ": "d j l ", "year": "2007","lnk": "../motor-city/", "image": "../../data/projects/1518/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [9.9888, 53.571731]},"properties": { "titl": "Multimedia Centre", "typ": "m b  ", "year": "1999","lnk": "../multimedia-centre/", "image": "../../data/projects/0893/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [9.83893, 46.49742]},"properties": { "titl": "The Murezzan", "typ": "h j l m p ", "year": "2007","lnk": "../the-murezzan/", "image": "../../data/projects/1254/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.131581, 51.544048]},"properties": { "titl": "Murray Mews", "typ": "h t ", "year": "1966","lnk": "../murray-mews/", "image": "../../data/projects/0084/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-71.09371, 42.33988]},"properties": { "titl": "Museum of Fine Arts", "typ": "d ", "year": "2010","lnk": "../museum-of-fine-arts/", "image": "../../data/projects/1049/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [6.03784, 43.69973]},"properties": { "titl": "Musée de Préhistoire", "typ": "d ", "year": "2001","lnk": "../musee-de-prehistoire/", "image": "../../data/projects/0651/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.13006, 51.50574]},"properties": { "titl": "National Police Memorial", "typ": "d ", "year": "2005","lnk": "../national-police-memorial/", "image": "../../data/projects/0890/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-74.01916, 40.69277]},"properties": { "titl": "New Globe Theater", "typ": "d ", "year": "2003","lnk": "../new-globe-theater/", "image": "../../data/projects/1262/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [30.29000, 59.92900]},"properties": { "titl": "New Holland Island", "typ": "d ", "year": "2006","lnk": "../new-holland-island/", "image": "../../data/projects/1426/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [0.003611, 51.500556]},"properties": { "titl": "North Greenwich Interchange", "typ": "q ", "year": "1998","lnk": "../north-greenwich-interchange/", "image": "../../data/projects/0897/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.09494, 51.51526]},"properties": { "titl": "Offices, 10 Gresham Street", "typ": "m ", "year": "2003","lnk": "../offices-10-gresham-street/", "image": "../../data/projects/0909/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [71.46361, 51.12305]},"properties": { "titl": "Palace of Peace and Reconciliation", "typ": "d ", "year": "2006","lnk": "../palace-of-peace-and-reconciliation/", "image": "../../data/projects/1322/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [100.96660, 4.38197]},"properties": { "titl": "Petronas University of Technology", "typ": "g o ", "year": "2004","lnk": "../petronas-university-of-technology/", "image": "../../data/projects/1028/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-73.988878, 40.743043]},"properties": { "titl": "Porcelanosa", "typ": "p ", "year": "2012","lnk": "../porcelanosa/", "image": "../../data/projects/2113/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [9.83893, 46.49742]},"properties": { "titl": "Posthaus Restaurant", "typ": "j ", "year": "2006","lnk": "../posthaus-restaurant/", "image": "../../data/projects/1390/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.08108, 51.50470]},"properties": { "titl": "7 More London Riverside", "typ": "l m p ", "year": "2010","lnk": "../7-more-london-riverside/", "image": "../../data/projects/1460/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-3.19319, 55.94377]},"properties": { "titl": "Quartermile Masterplan", "typ": "k ", "year": "2015","lnk": "../quartermile-masterplan/", "image": "../../data/projects/1108/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [35.98741, 31.72236]},"properties": { "titl": "Queen Alia International Airport", "typ": "q ", "year": "2012","lnk": "../queen-alia-international-airport/", "image": "../../data/projects/1346/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [151.20588, -33.87451]},"properties": { "titl": "Regent Place", "typ": "h l p ", "year": "2007","lnk": "../regent-place/", "image": "../../data/projects/1197/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [13.37600, 52.51860]},"properties": { "titl": "Reichstag, New German Parliament", "typ": "f ", "year": "1999","lnk": "../reichstag-new-german-parliament/", "image": "../../data/projects/0686/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-1.82449, 51.56741]},"properties": { "titl": "Renault Distribution Centre", "typ": "i l m ", "year": "1982","lnk": "../renault-distribution-centre/", "image": "../../data/projects/0295/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-13.86629, 28.38653]},"properties": { "titl": "Repsol - Service Stations", "typ": "n p ", "year": "1997","lnk": "../repsol-service-stations/", "image": "../../data/projects/0935/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-5.047291, 50.208375]},"properties": { "titl": "The Retreat", "typ": "d t  ", "year": "1963","lnk": "../the-retreat/", "image": "../../data/projects/0075/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-2.13868, 57.118828]},"properties": { "titl": "Robert Gordon University", "typ": "g ", "year": "1998","lnk": "../robert-gordon-university/", "image": "../../data/projects/0804/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [12.56722, 44.04970]},"properties": { "titl": "Rimini Seafront and Mixed Use", "typ": "j l m p ", "year": "2008","lnk": "../rimini-seafront-and-mixed-use/", "image": "../../data/projects/1706/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.16832, 51.48047]},"properties": { "titl": "Riverside Apartments and Studio", "typ": "h l m ", "year": "1990","lnk": "../riverside-apartments-and-studio/", "image": "../../data/projects/0361/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [37.53900, 55.74871]},"properties": { "titl": "Russia Tower", "typ": "l ", "year": "2006","lnk": "../russia-tower/", "image": "../../data/projects/1405/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.13944, 51.50916]},"properties": { "titl": "Sackler Galleries, Royal Academy of Arts", "typ": "d ", "year": "1991","lnk": "../sackler-galleries-royal-academy-of-arts/", "image": "../../data/projects/0356/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-1.60200, 54.96770]},"properties": { "titl": "The Sage Gateshead", "typ": "d ", "year": "2004","lnk": "../the-sage-gateshead/", "image": "../../data/projects/0984/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [1.23470, 52.62030]},"properties": { "titl": "Sainsbury Centre for Visual Arts", "typ": "d g ", "year": "1978","lnk": "../sainsbury-centre-for-visual-arts/", "image": "../../data/projects/0188/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-1.26072, 51.75276]},"properties": { "titl": "Samuel Beckett Theatre", "typ": "d ", "year": "1971","lnk": "../samuel-beckett-theatre/", "image": "../../data/projects/0137/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [12.49374, 43.98354]},"properties": { "titl": "San Marino World Trade Centre", "typ": "h j l m p ", "year": "2004","lnk": "../san-marino-world-trade-centre/", "image": "../../data/projects/0974/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [9.2515, 45.44071]},"properties": { "titl": "Santa Giulia Masterplan", "typ": "k ", "year": "2003","lnk": "../santa-giulia-masterplan/", "image": "../../data/projects/1278/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-100.376274, 25.652004]},"properties": { "titl": "Saqqara Development", "typ": "h l m ", "year": "2011","lnk": "../saqqara-development/", "image": "../../data/projects/1967/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-4.28766, 55.85976]},"properties": { "titl": "SECC Conference Centre", "typ": "d ", "year": "1997","lnk": "../secc-conference-centre/", "image": "../../data/projects/0854/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-3.66995, 40.44057]},"properties": { "titl": "Silken Hotel Puerta America", "typ": "j ", "year": "2005","lnk": "../silken-hotel-puerta-america/", "image": "../../data/projects/1292/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [18.07194, 59.32111]},"properties": { "titl": "Slussen Masterplan", "typ": "a k l ", "year": "2012","lnk": "../slussen-masterplan/", "image": "../../data/projects/1710/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-77.02308, 38.89801]},"properties": { "titl": "Smithsonian Institution", "typ": "d ", "year": "2007","lnk": "../smithsonian-institution/", "image": "../../data/projects/1276/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-106.97520, 32.99155]},"properties": { "titl": "Spaceport America", "typ": "m q ", "year": "2014","lnk": "../spaceport-america/", "image": "../../data/projects/1613/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-73.99259, 40.72316]},"properties": { "titl": "Sperone Westwater", "typ": "d m ", "year": "2010","lnk": "../sperone-westwater/", "image": "../../data/projects/1680/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-2.252245, 53.479904]},"properties": { "titl": "Spinningfields", "typ": "m ", "year": "2007","lnk": "../spinningfields/", "image": "../../data/projects/1216/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [0.26150, 51.89058]},"properties": { "titl": "Stansted Airport", "typ": "q ", "year": "1991","lnk": "../stansted-airport/", "image": "../../data/projects/0300/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.44540, 51.50813]},"properties": { "titl": "Stockley Park Offices", "typ": "m ", "year": "1989","lnk": "../stockley-park-offices/", "image": "../../data/projects/0428/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [103.85083, 1.29090]},"properties": { "titl": "Supreme Court Singapore", "typ": "f ", "year": "2005","lnk": "../supreme-court-singapore/", "image": "../../data/projects/1095/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.08034, 51.51462]},"properties": { "titl": "Swiss Re Headquarters, 30 St Mary Axe", "typ": "m ", "year": "2004","lnk": "../swiss-re-headquarters-30-st-mary-axe/", "image": "../../data/projects/1004/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [114.203331, 22.427185]},"properties": { "titl": "Tai Po", "typ": "h ", "year": "2007","lnk": "../tai-po/", "image": "../../data/projects/1554/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [0.73, 51.46]},"properties": { "titl": "Thames Hub", "typ": "q k  ", "year": "2010","lnk": "../thames-hub/", "image": "../../data/projects/2033/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.23410, 52.58760]},"properties": { "titl": "Thomas Deacon Academy", "typ": "g ", "year": "2007","lnk": "../thomas-deacon-academy/", "image": "../../data/projects/1269/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-3.687876, 40.475587]},"properties": { "titl": "Torre Caja Madrid Tower", "typ": "m ", "year": "2009","lnk": "../torre-caja-madrid-tower/", "image": "../../data/projects/1177/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [2.11444, 41.41729]},"properties": { "titl": "Torre de Collserola", "typ": "b ", "year": "1992","lnk": "../torre-de-collserola/", "image": "../../data/projects/0454/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-74.01134, 40.71221]},"properties": { "titl": "Tower 2 at World Trade Center", "typ": "m ", "year": "2006","lnk": "../tower-2-at-world-trade-center/", "image": "../../data/projects/1427/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.08018, 51.50895]},"properties": { "titl": "Tower Place", "typ": "m ", "year": "2002","lnk": "../tower-place/", "image": "../../data/projects/0642/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.12887, 51.50790]},"properties": { "titl": "Trafalgar Square Redevelopment", "typ": "k ", "year": "2003","lnk": "../trafalgar-square-redevelopment/", "image": "../../data/projects/1046/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [101.71782, 3.15809]},"properties": { "titl": "The Troika", "typ": "h l ", "year": "2011","lnk": "../the-troika/", "image": "../../data/projects/1307/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [121.49341, 31.18822]},"properties": { "titl": "UAE Pavilion Shanghai Expo 2010", "typ": "d ", "year": "2010","lnk": "../uae-pavilion-shanghai-expo-2010/", "image": "../../data/projects/1716/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [ -73.9660, 40.7518]},"properties": { "titl": "UN Plaza", "typ": "h ", "year": "2007","lnk": "../un-plaza/", "image": "../../data/projects/1599/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.40199, 39.49625]},"properties": { "titl": "Valencia Congress Centre", "typ": "d ", "year": "1998","lnk": "../valencia-congress-centre/", "image": "../../data/projects/0693/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [121.336389, 31.198056]},"properties": { "titl": "Vantone", "typ": "m ", "year": "2012","lnk": "../vantone/", "image": "../../data/projects/2002/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [105.847122, 21.025949]},"properties": { "titl": "Vietinbank", "typ": "j l m p  ", "year": "2010","lnk": "../vietinbank/", "image": "../../data/projects/1891/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [4.88509, 52.33786]},"properties": { "titl": "Vivaldi Tower", "typ": "k m ", "year": "2008","lnk": "../vivaldi-tower/", "image": "../../data/projects/1218/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.08998, 51.51219]},"properties": { "titl": "The Walbrook", "typ": "m ", "year": "2010","lnk": "../the-walbrook/", "image": "../../data/projects/1014/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.27972, 51.55583]},"properties": { "titl": "Wembley Stadium", "typ": "j ", "year": "2007","lnk": "../wembley-stadium/", "image": "../../data/projects/1015/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [114.18593, 22.30651]},"properties": { "titl": "West Kowloon Cultural District", "typ": "d h k l p ", "year": "2009","lnk": "../west-kowloon-cultural-district/", "image": "../../data/projects/1823/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.38241, 51.54340]},"properties": { "titl": "West London Academy", "typ": "g ", "year": "2006","lnk": "../west-london-academy/", "image": "../../data/projects/1178/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [1.15088, 52.05547]},"properties": { "titl": "Willis Faber & Dumas Headquarters", "typ": "m ", "year": "1975","lnk": "../willis-faber-&-dumas-headquarters/", "image": "../../data/projects/0102/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-0.08169, 51.51292]},"properties": { "titl": "Willis HQ, Lime Street", "typ": "m ", "year": "2007","lnk": "../willis-hq-lime-street/", "image": "../../data/projects/1147/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [4.48470, 51.90486]},"properties": { "titl": "World Port Centre", "typ": "m ", "year": "2000","lnk": "../world-port-centre/", "image": "../../data/projects/0879/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-74.012500, 40.71166]},"properties": { "titl": "World Trade Center", "typ": "k ", "year": "2002","lnk": "../world-trade-center/", "image": "../../data/projects/1210/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [7.42525, 43.73307]},"properties": { "titl": "Yacht Club de Monaco", "typ": "j ", "year": "2003","lnk": "../yacht-club-de-monaco/", "image": "../../data/projects/1208/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [-72.926667, 41.311111]},"properties": { "titl": "Yale School of Management", "typ": "g ", "year": "2007","lnk": "../yale-school-of-management/", "image": "../../data/projects/1544/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [54.44241, 24.53578]},"properties": { "titl": "Zayed National Museum", "typ": "d ", "year": "2007","lnk": "../zayed-national-museum/", "image": "../../data/projects/1550/t3.png" } },{ "geometry": { "type": "Point", "coordinates": [4.39153, 45.45429]},"properties": { "titl": "Zénith Music Venue", "typ": "d ", "year": "2008","lnk": "../zenith-music-venue/", "image": "../../data/projects/1299/t3.png" } }])
+
+ .factory(function(f) {
+         var img = document.createElement('img');
+         img.className = 'marker-image';
+         img.setAttribute('src', f.properties.image);
+ 		
+ 	    MM.addEvent(img, 'mouseover', function(e) {
+ 			document.body.style.cursor = 'pointer';
+ 			img.style.zIndex = z;
+ 			z++;
+ 	    });
+ 		
+ 	    MM.addEvent(img, 'mouseout', function(e) {
+ 			document.body.style.cursor = 'default';
+ 	    });
+ 		
+ 	    MM.addEvent(img, 'click', function(e) {
+ 			window.location = f.properties.lnk;
+ 	    });
+ 		
+ 		return img;
+ });
+ /*
+ .factory(function(f) {
+     var elem = mapbox.markers.simplestyle_factory(f);
+     MM.addEvent(elem, 'click', function() {
+ 		window.location.href = f.properties.lnk;
+     });
+	
+	
+	
+     return elem;
+ 	})*/
+
+var z = 10;
+var interaction = mapbox.markers.interaction(markerLayer);
+map.addLayer(markerLayer).setExtent(markerLayer.extent());
+  
+interaction.formatter(function(feature) {
+          var o = '<a href="' + feature.properties.lnk + '"><p>'+ feature.properties.titl + '</p>' +
+			  '<p>'+ feature.properties.year + '</p>' +
+			  '<p class="invisi">'+ feature.properties.typ + '</p></a>';
+			  
+          return o;
+});
+	
+var running = false;
+	 
+function click_year(y0) {
+      markerLayer.filter(function(f) {
+      	return f.properties.year <= y0;
+      });
+      return false;
+}
+
+var brid = document.getElementById('filter-brid');
+var comm = document.getElementById('filter-comm');
+var cult = document.getElementById('filter-cult');
+
+var gove = document.getElementById('filter-gove');
+var heal = document.getElementById('filter-heal');
+var hous = document.getElementById('filter-hous');
+var indu = document.getElementById('filter-indu');
+// var indd = document.getElementById('filter-indd');
+var leis = document.getElementById('filter-leis');
+var mast = document.getElementById('filter-mast');
+var mixe = document.getElementById('filter-mixe');
+var offi = document.getElementById('filter-offi');
+var rese = document.getElementById('filter-rese');
+var rete = document.getElementById('filter-rete');
+var tran = document.getElementById('filter-tran');
+var team = document.getElementById('filter-team');
+var all = document.getElementById('filter-all');
+
+// indd.className =
+function allOff(resetSlider) {
+all.className = brid.className = comm.className = cult.className = gove.className = heal.className = hous.className = indu.className =  leis.className = mast.className = mixe.className = offi.className = rese.className = rete.className = tran.className = team.className = '';
+filteredState = true; 
+if (resetSlider == true) {
+		$( ".slider" ).slider({value: 2012});
+		$( "#slider-result").html( '<p>Projects <span class="select">1967 - 2012</span></p>' );
+}
+}
+
+brid.onclick = function() {
+         allOff(true);
+		 
+         this.className = 'active';
+         markerLayer.filter(function(f) {
+	  		if (f.properties.typ.indexOf("a") != -1) { return true; } else { return false; }
+         });
+         return false;
+};
+
+comm.onclick = function() {
+        allOff(true);
+         this.className = 'active';
+         markerLayer.filter(function(f) {
+	  		if (f.properties.typ.indexOf("b") != -1) { return true; } else { return false; }
+         });
+        return false;
+};
+
+cult.onclick = function() {
+        allOff(true);
+         this.className = 'active';
+         markerLayer.filter(function(f) {
+	  		if (f.properties.typ.indexOf("d") != -1) { return true; } else { return false; }
+         });
+        return false;
+};
+
+
+gove.onclick = function() {
+        allOff(true);
+         this.className = 'active';
+         markerLayer.filter(function(f) {
+	  		if (f.properties.typ.indexOf("f") != -1) { return true; } else { return false; }
+         });
+        return false;
+};
+
+heal.onclick = function() {
+        allOff(true);
+         this.className = 'active';
+         markerLayer.filter(function(f) {
+	  		if (f.properties.typ.indexOf("g") != -1) { return true; } else { return false; }
+         });
+        return false;
+};
+
+hous.onclick = function() {
+        allOff(true);
+         this.className = 'active';
+         markerLayer.filter(function(f) {
+	  		if (f.properties.typ.indexOf("h") != -1) { return true; } else { return false; }
+         });
+        return false;
+};
+
+indu.onclick = function() {
+        allOff(true);
+         this.className = 'active';
+         markerLayer.filter(function(f) {
+	  		if (f.properties.typ.indexOf("i") != -1) { return true; } else { return false; }
+         });
+        return false;
+};
+
+// indd.onclick = function() {
+//         allOff(true);
+//          this.className = 'active';
+//          markerLayer.filter(function(f) {
+// 	  		if (f.properties.typ.indexOf("n") != -1) { return true; } else { return false; }
+//          });
+//         return false;
+// };
+
+leis.onclick = function() {
+        allOff(true);
+         this.className = 'active';
+         markerLayer.filter(function(f) {
+	  		if (f.properties.typ.indexOf("j") != -1) { return true; } else { return false; }
+         });
+        return false;
+};
+
+mast.onclick = function() {
+        allOff(true);
+         this.className = 'active';
+         markerLayer.filter(function(f) {
+	  		if (f.properties.typ.indexOf("k") != -1) { return true; } else { return false; }
+         });
+        return false;
+};
+
+mixe.onclick = function() {
+        allOff(true);
+         this.className = 'active';
+         markerLayer.filter(function(f) {
+	  		if (f.properties.typ.indexOf("l") != -1) { return true; } else { return false; }
+         });
+        return false;
+};
+
+offi.onclick = function() {
+        allOff(true);
+         this.className = 'active';
+         markerLayer.filter(function(f) {
+	  		if (f.properties.typ.indexOf("m") != -1) { return true; } else { return false; }
+         });
+        return false;
+};
+
+rese.onclick = function() {
+        allOff(true);
+         this.className = 'active';
+         markerLayer.filter(function(f) {
+	  		if (f.properties.typ.indexOf("o") != -1) { return true; } else { return false; }
+         });
+        return false;
+};
+
+rete.onclick = function() {
+        allOff(true);
+         this.className = 'active';
+         markerLayer.filter(function(f) {
+	  		if (f.properties.typ.indexOf("p") != -1) { return true; } else { return false; }
+         });
+        return false;
+};
+
+tran.onclick = function() {
+         allOff(true);
+         this.className = 'active';
+         markerLayer.filter(function(f) {
+	  		if (f.properties.typ.indexOf("q") != -1) { return true; } else { return false; }
+         });
+        return false;
+};
+
+team.onclick = function() {
+        allOff(true);
+         this.className = 'active';
+         markerLayer.filter(function(f) {
+	  		if (f.properties.typ.indexOf("t") != -1) { return true; } else { return false; }
+         });
+        return false;
+};
+
+all.onclick = function() {
+         allOff(true);
+		 filteredState = false; 
+         this.className = 'active';
+         markerLayer.filter(function(f) { return true; });
+         return false;
+};
+     
+var filteredState = false; 
+	 
+$( ".slider" ).slider({
+	 animate: false,
+	 range: "min",
+	 value: 2013,
+	 min: 1967,
+	 max: 2020,
+	 step: 1,
+	 start: function( event, ui ) {
+		 if (filteredState == true) {
+			 allOff();
+			 filteredState = false;
+			 all.className = 'active';
+			 markerLayer.filter(function(f) { return true; });
+		 }
+	 },	
+	 slide: function( event, ui ) {
+		 if (ui.value == '1967') {
+			 $( "#slider-result" ).html( '<p>Projects <span class="select">1967</span></p>' );
+		 } else {
+			 $( "#slider-result" ).html( '<p>Projects <span class="select">1967 - '+ui.value+'</span></p>' );
+		 }
+		 click_year(ui.value);
+	 }
+});
+
+// geo  
+var geolocate = document.getElementById('geolocate');
+if (!navigator.geolocation) {
+        geolocate.innerHTML = '&nbsp;';
+} else {
+        geolocate.onclick = function() {
+            navigator.geolocation.getCurrentPosition(
+            function(position) {
+				map.addLayer(markerLayer);
+                map.zoom(12).center({
+                    lat: position.coords.latitude,
+                    lon: position.coords.longitude
+                });
+                markerLayer.add_feature({
+                    geometry: {
+                        coordinates: [
+                            position.coords.longitude,
+                            position.coords.latitude]
+                    },
+                    properties: {
+						"titl": "My location",
+						"lnk": '#',
+					    "image": "../../core/img/marker-24.png" 
+						
+                    }
+                });
+                geolocate.parentNode.removeChild(geolocate);
+            },
+            function(err) {
+                geolocate.innerHTML = 'Position not found';
+            });
+};
+			
+}
+
+$('a#europe').click( function() { map.ease.location({ lat: 49.1, lon:6.2 }).zoom(5).optimal(); } );
+$('a#northamerica').click( function() { map.ease.location({ lat: 39.5, lon:-90.3 }).zoom(4).optimal(); } );
+$('a#southamerica').click( function() { map.ease.location({ lat: -19.9, lon:-58.6 }).zoom(4).optimal(); } );
+
+$('a#middleeast').click( function() { map.ease.location({ lat: 27, lon:48 }).zoom(5).optimal(); } );
+$('a#southeastasia').click( function() { map.ease.location({ lat: 23, lon:120.9 }).zoom(4).optimal(); } );
+$('a#australasia').click( function() { map.ease.location({ lat: -26.4, lon:140.8 }).zoom(5).optimal(); } );
+
+$('a#unitedkingdom').click( function() { map.ease.location({ lat: 54, lon:-2 }).zoom(6).optimal(); } );
+$('a#greaterlondon').click( function() { map.ease.location({ lat: 51.47,  lon:-0.2175}).zoom(11).optimal(); } );
+
+}
+
+setTimeout(launchActions, 0);
+
+})
+
+}); // end head 
+
+</script>
+
+<!-- end scripts -->
+
+</html>

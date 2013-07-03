@@ -1,0 +1,167 @@
+/*
+ * Galleria Miniml Theme
+ * Copyright (c) 2011, Aino
+ */
+
+
+#galleryouter {
+	width: 100%;
+} 
+ 
+#gallery { 
+	margin-right: 6px;
+	overflow:hidden; 
+	margin-top:6px; 
+	margin-bottom: 6px;
+} 
+ 
+ 
+.galleria-container {
+    position: relative;
+    font:11px/14px arial,sans-serif;
+}
+
+.galleria-container img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.galleria-stage {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    overflow:hidden;
+}
+.galleria-dots {
+    position:absolute;
+    height:10px;
+    top:18px;
+    left:18px;
+    z-index: 45000;
+ 
+}
+.galleria-dots div {
+	border:1px solid #fff;
+    width:4px;
+    height:4px;
+    margin-right:2px;
+    /*background: url(../img/miniml/circ.png) no-repeat;*/
+	opacity:0.4;
+filter:alpha(opacity=40); /* For IE8 and earlier */
+    float:left;
+    cursor:pointer;
+}
+.galleria-dots div:hover {
+    border:1px solid #fff;
+   opacity:0.6;
+filter:alpha(opacity=60); /* For IE8 and earlier */
+    }
+.galleria-dots div.active {
+	   border:1px solid #fff;
+   opacity:1;
+filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+.galleria-fs,
+.galleria-thumbs,
+.galleria-more {
+	display: none;
+}
+
+.galleria-more{
+    background-image:url(../img/miniml/info.png);
+    right:30px;
+}
+
+.fullscreen .galleria-stage{
+    bottom:30px;
+}
+.fullscreen .galleria-dots {
+    left:10px;
+    bottom:6px;
+    
+}
+
+.fullscreen .galleria-info {
+    bottom:10px;
+    margin-left:5px;
+}
+.fullscreen .galleria-thumbnails-container{
+    bottom:30px;
+}
+.galleria-counter {
+    display:none;
+}
+.galleria-loader, .galleria-info {
+    display:none;
+}
+
+.galleria-info-title {
+    display:none;
+
+}
+.galleria-info-description {
+    display:none!important;
+}
+
+.galleria-desc {
+    position:absolute;
+    width:30%;
+    top:50%;
+    left:50%;
+    margin-left:-15%;
+    background:#fff;
+    border:5px solid #fff;
+    padding:5px;
+    z-index:2;
+    font:11px/14px arial,sans-serif;
+    display:none;
+    color:#777;
+    cursor:pointer;
+}
+.galleria-desc.hover{
+    background:#fff url(../img/miniml/bye.png) no-repeat 100% 0;
+}
+.galleria-desc strong{
+    color:#222;
+    font-weight:normal;
+    margin-bottom:5px;
+    display:block;
+}
+.galleria-desc p{
+    margin-bottom:0;
+}
+.galleria-image-nav {
+    display:none;
+}
+.galleria-thumbnails-container {
+    position:absolute;
+    top:0;
+    bottom:20px;
+    left:0;
+    right:0;
+    background:url(../img/miniml/bg.png);
+    z-index:2;
+    overflow:hidden;
+    visibility: hidden;
+}
+.galleria-thumbnails {
+    margin:10px;
+}
+.galleria-thumbnails .galleria-image {
+    height: 50px;
+    width:80px;
+    background: #d77;
+    margin: 2px 8px 8px 2px;
+    float: left;
+    cursor: pointer;
+       -moz-box-shadow: 0 0 2px rgb(0,0,0);
+    -webkit-box-shadow: 0 0 2px rgb(0,0,0);
+            box-shadow: 0 0 2px rgb(0,0,0);
+}
+.galleria-thumbnails .galleria-image img:hover {
+    opacity:.1!important;
+    filter: alpha(opacity=10)!important;
+}

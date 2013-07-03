@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  
+<link rel="stylesheet" href="s/css/D8Fz3XWt+VC0VDejQHe7Mks5Qzc/www.fosterandpartners.com/9833.css" type="text/css" />   
+
+<link rel="stylesheet" href="../core/css/search/fp_search.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../core/css/search/jquery.jscrollpane.css" type="text/css" media="screen" />
+
+<base target="_parent" /> 
+
+
+
+</head>
+
+<body>
+	
+<div id="inputter">
+	<input type="text" id="term" class="iclass" value=' Search fosterandpartners.com here' onfocus="if(this.value==' Search fosterandpartners.com here') this.value=' ';"  />
+</div>
+
+<!-- onblur="if(this.value=='') this.value=' Search fosterandpartners.com here';" -->
+ 
+<div class="scroll-pane"><div id="results"></div></div>
+ 
+
+</body>
+
+<script type="text/javascript">
+
+delayTimer = null;
+
+function getResults() {
+	if ( escape($('#term').val()) && $('#term').val().length > 2) {
+	
+		$.cookie('search', $('#term').val());
+  		$.get('searchsw.php?q='+escape($('#term').val()), 
+		
+ 	   function(data) {
+		   $('#results').html(data); 	
+	   } 
+	   
+   );
+
+  delayTimer = null;
+    
+} else {
+  
+	$('#results').html('&nbsp;');	
+
+}
+
+}
+
+
+
+</script>
+
+<script type="text/javascript" src="../core/js/head.min.js"></script>
+
+<script type="text/javascript">
+
+
+
+head.js(
+	
+"http://code.jquery.com/jquery-1.9.1.min.js",
+"http://code.jquery.com/jquery-migrate-1.1.1.min.js",
+"../core/js/fp_scripts.001.js", 
+"../core/js/search/jquery.jscrollpane.min.js",
+"../core/js/search/jquery.mousewheel.js",  
+"../core/js/jquery.cookie.js",
+
+function() {
+	
+$('.scroll-pane').jScrollPane({autoReinitialise: true, autoReinitialiseDelay:1024, maintainPosition:false});
+
+$(window).ready(function() {
+  
+  var input = document.getElementById ('term');
+  
+  $(input).focus(function() {
+       $(this).val('');
+       });
+  
+
+	if ( $.cookie("search") ) {
+		input.value = $.cookie("search");
+		getResults();
+	} 
+
+	document.onkeydown = function (e) {
+		if (!e) {
+			var e = window.event;
+		}
+	};
+  
+$('#term').keyup(function() {
+	
+  if ( delayTimer )
+  	window.clearTimeout( delayTimer );
+  	delayTimer = window.setTimeout( getResults, 200 );
+ 
+  });
+
+});
+
+$('.icon_clear').click(function(){
+    var io = $(this).val().length ? 1 : 0 ;
+    $(this).next('.icon_clear').stop().fadeTo(300,io);
+}).on('click', '.icon_clear', function() {
+    $(this).delay(300).fadeTo(300,0).prev('input').val('');
+});
+
+
+}); // end head 
+
+</script>
+
+</html>
+
